@@ -1,0 +1,4834 @@
+@prefix : <http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras> .
+
+<http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#cria
+:cria rdf:type owl:ObjectProperty ;
+      owl:inverseOf :éCriadaPor ;
+      rdfs:domain :Compositor ;
+      rdfs:range :Obra .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#toca
+:toca rdf:type owl:ObjectProperty ;
+      owl:inverseOf :éTocadaPor ;
+      rdfs:domain :Instrumento ;
+      rdfs:range :Obra .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#éCriadaPor
+:éCriadaPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#éTocadaPor
+:éTocadaPor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Partitura
+:Partitura rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Instrumento .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tipo
+:Tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Obra .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Titulo
+:Titulo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Obra .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Compositor
+:Compositor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Instrumento
+:Instrumento rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Obra
+:Obra rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#A.MadureiradaSilva
+:A.MadureiradaSilva rdf:type owl:NamedIndividual ,
+                             :Compositor ;
+                    :cria :m9 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#A.Morais
+:A.Morais rdf:type owl:NamedIndividual ,
+                   :Compositor ;
+          :cria :m3 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ABBA
+:ABBA rdf:type owl:NamedIndividual ,
+               :Compositor ;
+      :cria :m28 ,
+            :m57 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AdolfSchreiner
+:AdolfSchreiner rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m62 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AfonsoAlves
+:AfonsoAlves rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m14 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AlbertoMadureira
+:AlbertoMadureira rdf:type owl:NamedIndividual ,
+                           :Compositor ;
+                  :cria :m7 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AlexandreFonseca
+:AlexandreFonseca rdf:type owl:NamedIndividual ,
+                           :Compositor ;
+                  :cria :m18 ,
+                        :m64 ,
+                        :m67 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AlexandreTeixeiraFonseca
+:AlexandreTeixeiraFonseca rdf:type owl:NamedIndividual ,
+                                   :Compositor ;
+                          :cria :m17 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AlexandredaFonseca
+:AlexandredaFonseca rdf:type owl:NamedIndividual ,
+                             :Compositor ;
+                    :cria :m16 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AlfredoKeil
+:AlfredoKeil rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m73 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#All
+:All rdf:type owl:NamedIndividual ,
+              :Instrumento ;
+     :toca :m10 ,
+           :m12 ,
+           :m14 ,
+           :m15 ,
+           :m19 ,
+           :m26 ,
+           :m28 ,
+           :m29 ,
+           :m3 ,
+           :m30 ,
+           :m31 ,
+           :m33 ,
+           :m35 ,
+           :m42 ,
+           :m43 ,
+           :m46 ;
+     :Partitura "1989-all.pdf" ,
+                "76Trombones-all.pdf" ,
+                "AbbaMia-all.pdf" ,
+                "BandsWorld-all.pdf" ,
+                "CacadoresI-all.pdf" ,
+                "CyclesMyths-all.pdf" ,
+                "Filarmonia-all.pdf" ,
+                "HighlightsChess-all.pdf" ,
+                "Paquito-all.pdf" ,
+                "Pilatus-all.pdf" ,
+                "Radetzky-all.pdf" ,
+                "RossRoy-all.pdf" ,
+                "SBento-all.pdf" ,
+                "Santana-all.pdf" ,
+                "SraNossa-all.pdf" ,
+                "Tarantula-all.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AmílcarMorais
+:AmílcarMorais rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m15 ,
+                     :m19 ,
+                     :m52 ,
+                     :m8 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AndrewLloydWebber
+:AndrewLloydWebber rdf:type owl:NamedIndividual ,
+                            :Compositor ;
+                   :cria :m53 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AngeloMoreira
+:AngeloMoreira rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m61 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#AntónioAlmeidadaSilva
+:AntónioAlmeidadaSilva rdf:type owl:NamedIndividual ,
+                                :Compositor ;
+                       :cria :m48 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Badalo
+:Badalo rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m68 ;
+        :Partitura "Macarena-timpanos-badalo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#BaixoElétrico
+:BaixoElétrico rdf:type owl:NamedIndividual ,
+                        :Instrumento ;
+               :toca :m30 ,
+                     :m53 ,
+                     :m65 ;
+               :Partitura "76Trombones-baixo-eletrico.pdf" ,
+                          "FantasmaOpera-baixo-eletrico.pdf" ,
+                          "LatinPop-baixo-eletrico.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Bateria
+:Bateria rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m1 ,
+               :m25 ,
+               :m27 ,
+               :m30 ,
+               :m46 ,
+               :m49 ,
+               :m57 ,
+               :m60 ,
+               :m61 ,
+               :m64 ,
+               :m65 ,
+               :m68 ;
+         :Partitura "76Trombones-bateria.pdf" ,
+                    "ABBAgold-bateria.pdf" ,
+                    "CancoesTrad-bateria.pdf" ,
+                    "HomenagemJSerra-bateria.pdf" ,
+                    "HorizonteRazao-bateria.pdf" ,
+                    "LatinPop-bateria.pdf" ,
+                    "Macarena-bateria.pdf" ,
+                    "Perola59-bateria.pdf" ,
+                    "PoetaAldeao-bateria.pdf" ,
+                    "PtSuave-bateria.pdf" ,
+                    "Santana-bateria.pdf" ,
+                    "Tannhauser-bateria.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#BernardinoBautistaMonteverde
+:BernardinoBautistaMonteverde rdf:type owl:NamedIndividual ,
+                                       :Compositor ;
+                              :cria :m68 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Bombo
+:Bombo rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m10 ,
+             :m11 ,
+             :m12 ,
+             :m14 ,
+             :m19 ,
+             :m2 ,
+             :m23 ,
+             :m27 ,
+             :m3 ,
+             :m30 ,
+             :m33 ,
+             :m34 ,
+             :m41 ,
+             :m44 ,
+             :m49 ,
+             :m5 ,
+             :m51 ,
+             :m52 ,
+             :m55 ,
+             :m56 ,
+             :m57 ,
+             :m58 ,
+             :m6 ,
+             :m67 ,
+             :m69 ,
+             :m7 ,
+             :m70 ,
+             :m71 ,
+             :m72 ,
+             :m9 ;
+       :Partitura "1989-bombo-pratos.pdf" ,
+                  "76Trombones-bombo.pdf" ,
+                  "ABBAgold-bombo.pdf" ,
+                  "ABotareu-bombo-pratos.pdf" ,
+                  "ArmindoAlves-bombo.tif" ,
+                  "AveMaria-bombo-pratos.pdf" ,
+                  "CancoesTrad-bombo.pdf" ,
+                  "Concha-bombo-pratos.pdf" ,
+                  "Crucifixus-bombo-pratos.pdf" ,
+                  "Esposende-bombo-pratos.pdf" ,
+                  "FateGods-bombo-caixa.pdf" ,
+                  "Filarmonia-bombo-pratos-flauta.pdf" ,
+                  "Gibraltar-bombo.pdf" ,
+                  "HolidayRio-bombo.pdf" ,
+                  "Hosanna-bombo-pratos.pdf" ,
+                  "InvDeus-bombo-pratos.pdf" ,
+                  "Jerusalen-bombo.pdf" ,
+                  "LaTuba-bombo-pratos.pdf" ,
+                  "Paquito-bombo-pratos.pdf" ,
+                  "SBento-bombo-pratos-XL.pdf" ,
+                  "SBento-bombo-pratos-caixa.pdf" ,
+                  "SJoao-bombo-pratos.pdf" ,
+                  "SMartinho-bombo-pratos.pdf" ,
+                  "SonhosPortugal-bombo-pratos.pdf" ,
+                  "SraNossa-bombo-caixa-pratos.pdf" ,
+                  "Suplica-bombo-pratos.pdf" ,
+                  "Tannhauser-bombo-pratos-ferrinhos.pdf" ,
+                  "Tarantula-bombo.pdf" ,
+                  "VilaFranca-bombo-pratos.pdf" ,
+                  "Xabia-bombo-pratos.pdf" ,
+                  "ZePedro-bombo-pratos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Bongo
+:Bongo rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m68 ;
+       :Partitura "Macarena-bongo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Cabaça
+:Cabaça rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m68 ;
+        :Partitura "Macarena-cabaca-pratos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Caixa
+:Caixa rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m1 ,
+             :m10 ,
+             :m11 ,
+             :m12 ,
+             :m14 ,
+             :m15 ,
+             :m19 ,
+             :m2 ,
+             :m23 ,
+             :m30 ,
+             :m33 ,
+             :m41 ,
+             :m49 ,
+             :m51 ,
+             :m52 ,
+             :m55 ,
+             :m56 ,
+             :m57 ,
+             :m58 ,
+             :m6 ,
+             :m61 ,
+             :m64 ,
+             :m67 ,
+             :m69 ,
+             :m7 ,
+             :m70 ,
+             :m71 ,
+             :m72 ,
+             :m9 ;
+       :Partitura "76Trombones-caixa.pdf" ,
+                  "ABBAgold-caixa.pdf" ,
+                  "ABotareu-caixa.pdf" ,
+                  "ArmindoAlves-caixa.tif" ,
+                  "AveMaria-caixa.pdf" ,
+                  "CacadoresI-caixa.pdf" ,
+                  "Concha-caixa.pdf" ,
+                  "Crucifixus-caixa.pdf" ,
+                  "Esposende-caixa.pdf" ,
+                  "FateGods-bombo-caixa.pdf" ,
+                  "Filarmonia-caixa-requinta.pdf" ,
+                  "Gibraltar-caixa.pdf" ,
+                  "HomenagemJSerra-caixa.pdf" ,
+                  "HorizonteRazao-caixa.pdf" ,
+                  "Hosanna-caixa.pdf" ,
+                  "InvDeus-caixa.pdf" ,
+                  "Jerusalen-caixa.pdf" ,
+                  "LaTuba-caixa.pdf" ,
+                  "Paquito-caixa.pdf" ,
+                  "Perola59-caixa.pdf" ,
+                  "SBento-bombo-pratos-caixa.pdf" ,
+                  "SJoao-caixa.pdf" ,
+                  "SMartinho-caixa.pdf" ,
+                  "SonhosPortugal-caixa.pdf" ,
+                  "SraNossa-bombo-caixa-pratos.pdf" ,
+                  "Suplica-caixa.pdf" ,
+                  "Tannhauser-caixa.pdf" ,
+                  "Tarantula-caixa.pdf" ,
+                  "ZePedro-caixa.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#CamillodeNardis
+:CamillodeNardis rdf:type owl:NamedIndividual ,
+                          :Compositor ;
+                 :cria :m74 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#CarlosMarques
+:CarlosMarques rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m20 ,
+                     :m25 ,
+                     :m4 ,
+                     :m54 ,
+                     :m6 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Castanholas
+:Castanholas rdf:type owl:NamedIndividual ,
+                      :Instrumento ;
+             :toca :m44 ,
+                   :m65 ;
+             :Partitura "LatinPop-timpanos-castanholas.pdf" ,
+                        "VilaFranca-castanholas-tanta.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Clarinete
+:Clarinete rdf:type owl:NamedIndividual ,
+                    :Instrumento ;
+           :toca :m1 ,
+                 :m10 ,
+                 :m11 ,
+                 :m12 ,
+                 :m13 ,
+                 :m14 ,
+                 :m15 ,
+                 :m19 ,
+                 :m2 ,
+                 :m20 ,
+                 :m23 ,
+                 :m25 ,
+                 :m27 ,
+                 :m28 ,
+                 :m29 ,
+                 :m3 ,
+                 :m30 ,
+                 :m31 ,
+                 :m32 ,
+                 :m33 ,
+                 :m34 ,
+                 :m41 ,
+                 :m42 ,
+                 :m44 ,
+                 :m46 ,
+                 :m49 ,
+                 :m5 ,
+                 :m50 ,
+                 :m51 ,
+                 :m52 ,
+                 :m53 ,
+                 :m55 ,
+                 :m56 ,
+                 :m57 ,
+                 :m58 ,
+                 :m59 ,
+                 :m6 ,
+                 :m60 ,
+                 :m61 ,
+                 :m62 ,
+                 :m63 ,
+                 :m64 ,
+                 :m65 ,
+                 :m66 ,
+                 :m67 ,
+                 :m68 ,
+                 :m69 ,
+                 :m7 ,
+                 :m70 ,
+                 :m71 ,
+                 :m72 ,
+                 :m73 ,
+                 :m74 ,
+                 :m9 ;
+           :Partitura "1989-clarinete1.pdf" ,
+                      "1989-clarinete2.pdf" ,
+                      "1989-clarinete3.pdf" ,
+                      "76Trombones-clarinete.pdf" ,
+                      "76Trombones-clarinete1.pdf" ,
+                      "76Trombones-clarinete2.pdf" ,
+                      "76Trombones-clarinete3.pdf" ,
+                      "ABBAgold-clarinete1.pdf" ,
+                      "ABBAgold-clarinete2.pdf" ,
+                      "ABBAgold-clarinete3.pdf" ,
+                      "ABotareu-clarinete1.pdf" ,
+                      "ABotareu-clarinete2.pdf" ,
+                      "ABotareu-clarinete3.pdf" ,
+                      "AbbaMia-clarinete1.pdf" ,
+                      "AbbaMia-clarinete2.pdf" ,
+                      "AbbaMia-clarinete3.pdf" ,
+                      "ArmindoAlves-clarinete1.tif" ,
+                      "ArmindoAlves-clarinete2.tif" ,
+                      "ArmindoAlves-clarinete3.tif" ,
+                      "AveMaria-clarinete1.pdf" ,
+                      "AveMaria-clarinete2.pdf" ,
+                      "AveMaria-clarinete3.pdf" ,
+                      "CacadoresI-clarinete1.pdf" ,
+                      "CacadoresI-clarinete2.pdf" ,
+                      "CacadoresI-clarinete3.pdf" ,
+                      "CancoesTrad-clari1.pdf" ,
+                      "CancoesTrad-clari2.pdf" ,
+                      "CancoesTrad-clari3.pdf" ,
+                      "CancoesTrad-clari4.pdf" ,
+                      "CasaSPaulo-clarinete1.pdf" ,
+                      "CasaSPaulo-clarinete2.pdf" ,
+                      "CasaSPaulo-clarinete3.pdf" ,
+                      "Cassiopeia-clarinete1.pdf" ,
+                      "Cassiopeia-clarinete2.pdf" ,
+                      "Cassiopeia-clarinete3.pdf" ,
+                      "CavalariaLigeira-clarinete-solo.pdf" ,
+                      "CavalariaLigeira-clarinete1.pdf" ,
+                      "CavalariaLigeira-clarinete2.pdf" ,
+                      "CavalariaLigeira-clarinete3.pdf" ,
+                      "Concha-clarinete1.pdf" ,
+                      "Concha-clarinete2.pdf" ,
+                      "Concha-clarinete3.pdf" ,
+                      "Crucifixus-clarinete1.pdf" ,
+                      "Crucifixus-clarinete2.pdf" ,
+                      "Crucifixus-clarinete3.pdf" ,
+                      "Esposende-clarinete1.pdf" ,
+                      "Esposende-clarinete2.pdf" ,
+                      "Esposende-clarinete3.pdf" ,
+                      "FantasmaOpera-clarinete-solo.pdf" ,
+                      "FantasmaOpera-clarinete.pdf" ,
+                      "FantasmaOpera-clarinete1.pdf" ,
+                      "FantasmaOpera-clarinete2.pdf" ,
+                      "FantasmaOpera-clarinete3.pdf" ,
+                      "FateGods-clarinete1.pdf" ,
+                      "FateGods-clarinete2.pdf" ,
+                      "FateGods-clarinete3.pdf" ,
+                      "Filarmonia-clarinete1-3.pdf" ,
+                      "Filarmonia-trompete-clarinete2.pdf" ,
+                      "FilhosNacao-clarinete1.pdf" ,
+                      "FilhosNacao-clarinete2.pdf" ,
+                      "Gibraltar-clarinete1.pdf" ,
+                      "Gibraltar-clarinete2.pdf" ,
+                      "Gibraltar-clarinete3.pdf" ,
+                      "Harmonique-clarinete1.pdf" ,
+                      "Harmonique-clarinete2.pdf" ,
+                      "Harmonique-clarinete3.pdf" ,
+                      "HighlightsChess-clarinete1.pdf" ,
+                      "HighlightsChess-clarinete2.pdf" ,
+                      "HighlightsChess-clarinete3.pdf" ,
+                      "HinoPortugal-clarinete1.pdf" ,
+                      "HinoPortugal-clarinete2.pdf" ,
+                      "HinoPortugal-clarinete3.pdf" ,
+                      "HolidayRio-clarinete1-A.pdf" ,
+                      "HolidayRio-clarinete1-B.pdf" ,
+                      "HolidayRio-clarinete2.pdf" ,
+                      "HolidayRio-clarinete3.pdf" ,
+                      "HomenagemJSerra-clarinete.pdf" ,
+                      "HomenagemJSerra-clarinete1.pdf" ,
+                      "HomenagemJSerra-clarinete2.pdf" ,
+                      "HomenagemJSerra-clarinete3.pdf" ,
+                      "HorizonteRazao-clarinete1.pdf" ,
+                      "HorizonteRazao-clarinete2.pdf" ,
+                      "HorizonteRazao-clarinete3.pdf" ,
+                      "Hosanna-clarinete-solo.pdf" ,
+                      "Hosanna-clarinete1.pdf" ,
+                      "Hosanna-clarinete2.pdf" ,
+                      "Hosanna-clarinete3.pdf" ,
+                      "ImmerKleiner-clarinete-solo.pdf" ,
+                      "ImmerKleiner-clarinete1.pdf" ,
+                      "ImmerKleiner-clarinete2-3.pdf" ,
+                      "ImmerKleiner-clarinete3a.pdf" ,
+                      "ImmerKleiner-clarinete3b.pdf" ,
+                      "InvDeus-clarinete1.pdf" ,
+                      "InvDeus-clarinete2.pdf" ,
+                      "InvDeus-clarinete3.pdf" ,
+                      "Jerusalen-clarinete-solo.pdf" ,
+                      "Jerusalen-clarinete1.pdf" ,
+                      "Jerusalen-clarinete2.pdf" ,
+                      "Jerusalen-clarinete3.pdf" ,
+                      "JuizoFinal-clarinete1.pdf" ,
+                      "JuizoFinal-clarinete2.pdf" ,
+                      "JuizoFinal-clarinete3.pdf" ,
+                      "LaStoria-clarinete1.pdf" ,
+                      "LaStoria-clarinete2.pdf" ,
+                      "LaStoria-clarinete3.pdf" ,
+                      "LaTuba-clarinete-solo.pdf" ,
+                      "LaTuba-clarinete1.pdf" ,
+                      "LaTuba-clarinete2.pdf" ,
+                      "LaTuba-clarinete3.pdf" ,
+                      "LatinPop-clarinete1.pdf" ,
+                      "LatinPop-clarinete2.pdf" ,
+                      "LatinPop-clarinete3.pdf" ,
+                      "Macarena-clarinete1.pdf" ,
+                      "Macarena-clarinete2.pdf" ,
+                      "Macarena-clarinete3.pdf" ,
+                      "MomentMorricone-clarinete1.pdf" ,
+                      "MomentMorricone-clarinete2.pdf" ,
+                      "MomentMorricone-clarinete3.pdf" ,
+                      "Paquito-clarinete-solo.pdf" ,
+                      "Paquito-clarinete1.pdf" ,
+                      "Paquito-clarinete2.pdf" ,
+                      "Paquito-clarinete3.pdf" ,
+                      "Perola59-clarinete1.pdf" ,
+                      "Perola59-clarinete2.pdf" ,
+                      "Perola59-clarinete3.pdf" ,
+                      "Pilatus-clarinete1.pdf" ,
+                      "Pilatus-clarinete2-3.pdf" ,
+                      "Pilatus-clarinete2.pdf" ,
+                      "Pilatus-clarinete3.pdf" ,
+                      "PoetaAldeao-clarinete-solo.pdf" ,
+                      "PoetaAldeao-clarinete1.pdf" ,
+                      "PoetaAldeao-clarinete2.pdf" ,
+                      "PoetaAldeao-clarinete3.pdf" ,
+                      "PtSuave-clarinete1.pdf" ,
+                      "PtSuave-clarinete2.pdf" ,
+                      "PtSuave-clarinete3.pdf" ,
+                      "RossRoy-clarinete1.pdf" ,
+                      "RossRoy-clarinete2.pdf" ,
+                      "RossRoy-clarinete3.pdf" ,
+                      "SBento-clarinete2-3.pdf" ,
+                      "SBento-flauta-clarinete1.pdf" ,
+                      "SJoao-clarinete1.pdf" ,
+                      "SJoao-clarinete2.pdf" ,
+                      "SJoao-clarinete3.pdf" ,
+                      "SMartinho-clarinete1.pdf" ,
+                      "SMartinho-clarinete2.pdf" ,
+                      "SMartinho-clarinete3.pdf" ,
+                      "Santana-clarinete1-solo.pdf" ,
+                      "Santana-clarinete2.pdf" ,
+                      "Santana-clarinete3.pdf" ,
+                      "SonhosPortugal-clarinete1.pdf" ,
+                      "SonhosPortugal-clarinete2.pdf" ,
+                      "SonhosPortugal-clarinete3.pdf" ,
+                      "SraNossa-clarinete1-requinta.pdf" ,
+                      "SraNossa-clarinete2-3.pdf" ,
+                      "Suplica-clarinete1.pdf" ,
+                      "Suplica-clarinete2.pdf" ,
+                      "Suplica-clarinete3.pdf" ,
+                      "Tannhauser-clarinete-solo.pdf" ,
+                      "Tannhauser-clarinete.pdf" ,
+                      "Tannhauser-clarinete1a.pdf" ,
+                      "Tannhauser-clarinete1b.pdf" ,
+                      "Tannhauser-clarinete2.pdf" ,
+                      "Tannhauser-clarinete3.pdf" ,
+                      "Tarantula-clarinete-mib.pdf" ,
+                      "Tarantula-clarinete1.pdf" ,
+                      "Tarantula-clarinete2.pdf" ,
+                      "Tarantula-clarinete3.pdf" ,
+                      "VilaFranca-clarinete1.pdf" ,
+                      "VilaFranca-clarinete2.pdf" ,
+                      "VilaFranca-clarinete3.pdf" ,
+                      "Xabia-clarinete1.pdf" ,
+                      "Xabia-clarinete2.pdf" ,
+                      "Xabia-clarinete3.pdf" ,
+                      "ZePedro-clarinete1.pdf" ,
+                      "ZePedro-clarinete2.pdf" ,
+                      "ZePedro-clarinete3.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ClarineteAlto
+:ClarineteAlto rdf:type owl:NamedIndividual ,
+                        :Instrumento ;
+               :toca :m15 ,
+                     :m20 ,
+                     :m29 ,
+                     :m31 ,
+                     :m44 ,
+                     :m53 ,
+                     :m65 ,
+                     :m68 ,
+                     :m73 ;
+               :Partitura "CacadoresI-clarinete-alto.pdf" ,
+                          "Cassiopeia-clarinete-alto.pdf" ,
+                          "FantasmaOpera-clarinete-alto.pdf" ,
+                          "HighlightsChess-clarinete-alto.pdf" ,
+                          "HinoPortugal-clarinete-alto.pdf" ,
+                          "LatinPop-clarinete-alto.pdf" ,
+                          "Macarena-clarinete-alto.pdf" ,
+                          "RossRoy-clarinete-alto.pdf" ,
+                          "VilaFranca-clarinete-alto.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ClarineteBaixo
+:ClarineteBaixo rdf:type owl:NamedIndividual ,
+                         :Instrumento ;
+                :toca :m10 ,
+                      :m15 ,
+                      :m19 ,
+                      :m20 ,
+                      :m23 ,
+                      :m28 ,
+                      :m29 ,
+                      :m3 ,
+                      :m31 ,
+                      :m34 ,
+                      :m42 ,
+                      :m44 ,
+                      :m5 ,
+                      :m51 ,
+                      :m53 ,
+                      :m56 ,
+                      :m58 ,
+                      :m59 ,
+                      :m60 ,
+                      :m64 ,
+                      :m65 ,
+                      :m66 ,
+                      :m67 ,
+                      :m68 ,
+                      :m70 ,
+                      :m71 ,
+                      :m73 ,
+                      :m9 ;
+                :Partitura "1989-clarinete-baixo.pdf" ,
+                           "AbbaMia-clarinete-baixo.pdf" ,
+                           "CacadoresI-clarinete-baixo.pdf" ,
+                           "Cassiopeia-clarinete-baixo.pdf" ,
+                           "Crucifixus-clarinete-baixo.pdf" ,
+                           "Esposende-clarinete-baixo.pdf" ,
+                           "FantasmaOpera-clarinete-baixo.pdf" ,
+                           "FateGods-clarinete-baixo.pdf" ,
+                           "Gibraltar-clarinete-baixo.pdf" ,
+                           "HighlightsChess-clarinete-baixo.pdf" ,
+                           "HinoPortugal-clarinete-baixo.pdf" ,
+                           "HolidayRio-clarinete-baixo.pdf" ,
+                           "HorizonteRazao-clarinete-baixo.pdf" ,
+                           "Hosanna-clarinete-baixo.pdf" ,
+                           "Jerusalen-clarinete-baixo.pdf" ,
+                           "LaStoria-clarinete-baixo.pdf" ,
+                           "LatinPop-clarinete-baixo.pdf" ,
+                           "Macarena-clarinete-baixo.pdf" ,
+                           "MomentMorricone-clarinete-baixo.pdf" ,
+                           "Pilatus-clarinete-baixo.pdf" ,
+                           "PoetaAldeao-clarinete-baixo.pdf" ,
+                           "RossRoy-clarinete-baixo.pdf" ,
+                           "SraNossa-clarinete-baixo-saxS.pdf" ,
+                           "Suplica-clarinete-baixo.pdf" ,
+                           "Tarantula-clarinete-baixo.pdf" ,
+                           "VilaFranca-clarinete-baixo.pdf" ,
+                           "Xabia-clarinete-baixo.pdf" ,
+                           "ZePedro-clarinete-baixo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ClarineteContrabaixo
+:ClarineteContrabaixo rdf:type owl:NamedIndividual ,
+                               :Instrumento ;
+                      :toca :m44 ;
+                      :Partitura "VilaFranca-clarinete-contrabaixo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Congas
+:Congas rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m5 ,
+              :m65 ,
+              :m68 ;
+        :Partitura "HolidayRio-congas.pdf" ,
+                   "LatinPop-congas.pdf" ,
+                   "Macarena-congas.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Contrabaixo
+:Contrabaixo rdf:type owl:NamedIndividual ,
+                      :Instrumento ;
+             :toca :m10 ,
+                   :m12 ,
+                   :m13 ,
+                   :m19 ,
+                   :m20 ,
+                   :m28 ,
+                   :m31 ,
+                   :m44 ,
+                   :m49 ,
+                   :m51 ,
+                   :m7 ,
+                   :m71 ;
+             :Partitura "AbbaMia-contrabaixo-fa-mib.pdf" ,
+                        "AbbaMia-contrabaixo-fa-sib.pdf" ,
+                        "AbbaMia-contrabaixo-sol-sib.pdf" ,
+                        "AveMaria-contrabaixo.pdf" ,
+                        "CasaSPaulo-contrabaixo.pdf" ,
+                        "Cassiopeia-contrabaixo.pdf" ,
+                        "Crucifixus-contrabaixo.pdf" ,
+                        "HighlightsChess-contrabaixo.pdf" ,
+                        "Jerusalen-baixo-do.pdf" ,
+                        "SBento-tuba-contrabaixo.pdf" ,
+                        "SraNossa-contrabaixo-tuba-fa-do.pdf" ,
+                        "Tannhauser-contrabaixo.pdf" ,
+                        "Tarantula-contrabaixo-mib.pdf" ,
+                        "VilaFranca-contrabaixo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#CorneInglês
+:CorneInglês rdf:type owl:NamedIndividual ,
+                      :Instrumento ;
+             :toca :m29 ,
+                   :m31 ,
+                   :m53 ;
+             :Partitura "FantasmaOpera-corne-ingles.pdf" ,
+                        "HighlightsChess-corne-ingles.pdf" ,
+                        "RossRoy-corne-ingles.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Corneta
+:Corneta rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m15 ,
+               :m57 ,
+               :m58 ,
+               :m60 ,
+               :m62 ,
+               :m66 ;
+         :Partitura "ABBAgold-corneta1.pdf" ,
+                    "ABBAgold-corneta2.pdf" ,
+                    "CacadoresI-corneta1.pdf" ,
+                    "CacadoresI-corneta2.pdf" ,
+                    "Gibraltar-corneta1.pdf" ,
+                    "Gibraltar-corneta2.pdf" ,
+                    "Gibraltar-corneta3.pdf" ,
+                    "ImmerKleiner-corneta2-3.pdf" ,
+                    "LaStoria-corneta.pdf" ,
+                    "PoetaAldeao-corneta1.pdf" ,
+                    "PoetaAldeao-corneta2.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Cornetim
+:Cornetim rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m44 ,
+                :m49 ,
+                :m73 ;
+          :Partitura "HinoPortugal-cornetim1.pdf" ,
+                     "HinoPortugal-cornetim2.pdf" ,
+                     "Tannhauser-cornetim-solo.pdf" ,
+                     "Tannhauser-cornetim1.pdf" ,
+                     "Tannhauser-cornetim2-3.pdf" ,
+                     "VilaFranca-cornetim1.pdf" ,
+                     "VilaFranca-cornetim2.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#EnnioMorricone
+:EnnioMorricone rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m59 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Eufónio
+:Eufónio rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m1 ,
+               :m10 ,
+               :m11 ,
+               :m12 ,
+               :m13 ,
+               :m14 ,
+               :m15 ,
+               :m19 ,
+               :m2 ,
+               :m20 ,
+               :m23 ,
+               :m25 ,
+               :m27 ,
+               :m28 ,
+               :m3 ,
+               :m30 ,
+               :m31 ,
+               :m32 ,
+               :m33 ,
+               :m34 ,
+               :m41 ,
+               :m42 ,
+               :m44 ,
+               :m46 ,
+               :m49 ,
+               :m5 ,
+               :m50 ,
+               :m51 ,
+               :m52 ,
+               :m55 ,
+               :m56 ,
+               :m57 ,
+               :m58 ,
+               :m59 ,
+               :m6 ,
+               :m60 ,
+               :m61 ,
+               :m62 ,
+               :m63 ,
+               :m64 ,
+               :m65 ,
+               :m66 ,
+               :m67 ,
+               :m68 ,
+               :m69 ,
+               :m7 ,
+               :m70 ,
+               :m71 ,
+               :m72 ,
+               :m73 ,
+               :m74 ,
+               :m9 ;
+         :Partitura "1989-eufonio-fa-do.pdf" ,
+                    "1989-eufonio-sol.pdf" ,
+                    "76Trombones-eufonio.pdf" ,
+                    "ABBAgold-eufonio.pdf" ,
+                    "ABotareu-eufonio.pdf" ,
+                    "AbbaMia-eufonio1-fa-do.pdf" ,
+                    "AbbaMia-eufonio1-fa.pdf" ,
+                    "AbbaMia-eufonio1-sol.pdf" ,
+                    "AbbaMia-eufonio2-fa-do.pdf" ,
+                    "AbbaMia-eufonio2-fa.pdf" ,
+                    "AbbaMia-eufonio2-sol.pdf" ,
+                    "ArmindoAlves-eufonio.tif" ,
+                    "AveMaria-eufonio-fa-do.pdf" ,
+                    "AveMaria-eufonio-fa.pdf" ,
+                    "AveMaria-eufonio-sol-do.pdf" ,
+                    "AveMaria-eufonio-sol.pdf" ,
+                    "CacadoresI-eufonio-sol.pdf" ,
+                    "CacadoresI-eufonio.pdf" ,
+                    "CancoesTrad-eufonio.pdf" ,
+                    "CasaSPaulo-eufonio-sol.pdf" ,
+                    "CasaSPaulo-eufonio.pdf" ,
+                    "Cassiopeia-eufonio-sol.pdf" ,
+                    "Cassiopeia-eufonio.pdf" ,
+                    "CavalariaLigeira-eufonio.pdf" ,
+                    "Concha-eufonio.pdf" ,
+                    "Crucifixus-eufonio1-2.pdf" ,
+                    "Esposende-eufonio1.pdf" ,
+                    "Esposende-eufonio2.pdf" ,
+                    "FateGods-eufonio-fa-do.pdf" ,
+                    "Filarmonia-trombone1-eufonio.pdf" ,
+                    "FilhosNacao-eufonio.pdf" ,
+                    "Gibraltar-eufonio-sol.pdf" ,
+                    "Gibraltar-eufonio.pdf" ,
+                    "Harmonique-eufonio.pdf" ,
+                    "HighlightsChess-eufonio.pdf" ,
+                    "HinoPortugal-eufonio1.pdf" ,
+                    "HinoPortugal-eufonio2.pdf" ,
+                    "HolidayRio-eufonio.pdf" ,
+                    "HomenagemJSerra-eufonio.pdf" ,
+                    "HorizonteRazao-eufonio.pdf" ,
+                    "Hosanna-eufonio1.pdf" ,
+                    "Hosanna-eufonio2.pdf" ,
+                    "ImmerKleiner-eufonio.pdf" ,
+                    "InvDeus-eufonio.pdf" ,
+                    "InvDeus-eufonio1.pdf" ,
+                    "Jerusalen-eufonio1-fa-do.pdf" ,
+                    "Jerusalen-eufonio2-fa-do.pdf" ,
+                    "JuizoFinal-eufonio.pdf" ,
+                    "LaStoria-eufonio-fa-do.pdf" ,
+                    "LaStoria-eufonio-fa.pdf" ,
+                    "LaStoria-eufonio-sol.pdf" ,
+                    "LaTuba-eufonio.pdf" ,
+                    "LatinPop-eufonio.pdf" ,
+                    "Macarena-eufonio1-2.pdf" ,
+                    "MomentMorricone-eufonio.pdf" ,
+                    "Paquito-eufonio1.pdf" ,
+                    "Paquito-eufonio2.pdf" ,
+                    "Perola59-eufonio.pdf" ,
+                    "Pilatus-eufonio.pdf" ,
+                    "PoetaAldeao-eufonio.pdf" ,
+                    "PtSuave-eufonio-sol.pdf" ,
+                    "SBento-eufonio.pdf" ,
+                    "SJoao-eufonio1.pdf" ,
+                    "SJoao-eufonio2.pdf" ,
+                    "SMartinho-eufonio.pdf" ,
+                    "Santana-eufonio.pdf" ,
+                    "SonhosPortugal-eufonio1.pdf" ,
+                    "SonhosPortugal-eufonio2.pdf" ,
+                    "SraNossa-contrabaixo-eufonio-fa-do-sol-sib.pdf" ,
+                    "Suplica-eufonio1.pdf" ,
+                    "Suplica-eufonio2.pdf" ,
+                    "Tannhauser-eufonio.pdf" ,
+                    "Tannhauser-eufonio1.pdf" ,
+                    "Tannhauser-eufonio2.pdf" ,
+                    "Tarantula-eufonio1.pdf" ,
+                    "Tarantula-eufonio2.pdf" ,
+                    "VilaFranca-eufonio1-2.pdf" ,
+                    "Xabia-eufonio.pdf" ,
+                    "ZePedro-eufonio1-fa-do.pdf" ,
+                    "ZePedro-eufonio2-fa-do.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Fagote
+:Fagote rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m1 ,
+              :m10 ,
+              :m14 ,
+              :m15 ,
+              :m20 ,
+              :m23 ,
+              :m28 ,
+              :m29 ,
+              :m30 ,
+              :m31 ,
+              :m42 ,
+              :m44 ,
+              :m46 ,
+              :m49 ,
+              :m51 ,
+              :m52 ,
+              :m53 ,
+              :m58 ,
+              :m59 ,
+              :m60 ,
+              :m62 ,
+              :m65 ,
+              :m66 ,
+              :m68 ,
+              :m7 ,
+              :m70 ,
+              :m71 ,
+              :m73 ,
+              :m74 ;
+        :Partitura "76Trombones-fagote.pdf" ,
+                   "ABotareu-fagote.pdf" ,
+                   "AbbaMia-fagote1.pdf" ,
+                   "AbbaMia-fagote2.pdf" ,
+                   "AveMaria-fagote.pdf" ,
+                   "CacadoresI-fagote.pdf" ,
+                   "Cassiopeia-fagote.pdf" ,
+                   "Crucifixus-fagote1-2.pdf" ,
+                   "FantasmaOpera-fagote.pdf" ,
+                   "FantasmaOpera-fagote1.pdf" ,
+                   "FantasmaOpera-fagote2.pdf" ,
+                   "FateGods-fagote.pdf" ,
+                   "Filarmonia-lira-fagote.pdf" ,
+                   "Gibraltar-fagote.pdf" ,
+                   "HighlightsChess-fagote.pdf" ,
+                   "HinoPortugal-fagote1.pdf" ,
+                   "HinoPortugal-fagote2.pdf" ,
+                   "HomenagemJSerra-fagote.pdf" ,
+                   "Hosanna-fagote1-2.pdf" ,
+                   "ImmerKleiner-fagote1-2.pdf" ,
+                   "Jerusalen-fagote.pdf" ,
+                   "JuizoFinal-fagote2.pdf" ,
+                   "LaStoria-fagote1.pdf" ,
+                   "LaStoria-fagote2.pdf" ,
+                   "LatinPop-fagote.pdf" ,
+                   "Macarena-fagote.pdf" ,
+                   "MomentMorricone-fagote.pdf" ,
+                   "Pilatus-fagote.pdf" ,
+                   "PoetaAldeao-fagote1.pdf" ,
+                   "PoetaAldeao-fagote2.pdf" ,
+                   "RossRoy-fagote1.pdf" ,
+                   "RossRoy-fagote2.pdf" ,
+                   "Santana-fagote.pdf" ,
+                   "SraNossa-fagote-oboe.pdf" ,
+                   "Tannhauser-fagote.pdf" ,
+                   "VilaFranca-fagote.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#FernandoFerreiradaCosta
+:FernandoFerreiradaCosta rdf:type owl:NamedIndividual ,
+                                  :Compositor ;
+                         :cria :m11 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Ferrinhos
+:Ferrinhos rdf:type owl:NamedIndividual ,
+                    :Instrumento ;
+           :toca :m27 ,
+                 :m49 ,
+                 :m55 ;
+           :Partitura "CancoesTrad-ferrinhos.pdf" ,
+                      "LaTuba-ferrinhos-pandeireta.pdf" ,
+                      "Tannhauser-bombo-pratos-ferrinhos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Flauta
+:Flauta rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m1 ,
+              :m10 ,
+              :m11 ,
+              :m12 ,
+              :m13 ,
+              :m14 ,
+              :m15 ,
+              :m19 ,
+              :m2 ,
+              :m20 ,
+              :m23 ,
+              :m25 ,
+              :m27 ,
+              :m28 ,
+              :m29 ,
+              :m3 ,
+              :m30 ,
+              :m31 ,
+              :m32 ,
+              :m33 ,
+              :m34 ,
+              :m41 ,
+              :m42 ,
+              :m44 ,
+              :m46 ,
+              :m49 ,
+              :m5 ,
+              :m50 ,
+              :m51 ,
+              :m52 ,
+              :m53 ,
+              :m55 ,
+              :m56 ,
+              :m57 ,
+              :m58 ,
+              :m59 ,
+              :m6 ,
+              :m60 ,
+              :m61 ,
+              :m62 ,
+              :m63 ,
+              :m64 ,
+              :m65 ,
+              :m66 ,
+              :m67 ,
+              :m68 ,
+              :m69 ,
+              :m7 ,
+              :m70 ,
+              :m71 ,
+              :m72 ,
+              :m73 ,
+              :m74 ,
+              :m9 ;
+        :Partitura "1989-flauta.pdf" ,
+                   "76Trombones-flauta1.pdf" ,
+                   "76Trombones-flauta2.pdf" ,
+                   "ABBAgold-flauta1-2.pdf" ,
+                   "ABotareu-flauta.pdf" ,
+                   "AbbaMia-flauta1.pdf" ,
+                   "AbbaMia-flauta2.pdf" ,
+                   "ArmindoAlves-flauta.tif" ,
+                   "AveMaria-flauta.pdf" ,
+                   "CacadoresI-flauta.pdf" ,
+                   "CancoesTrad-flauta1.pdf" ,
+                   "CancoesTrad-flauta2.pdf" ,
+                   "CasaSPaulo-flauta.pdf" ,
+                   "Cassiopeia-flauta.pdf" ,
+                   "CavalariaLigeira-flauta.pdf" ,
+                   "Concha-flauta1-2.pdf" ,
+                   "Crucifixus-flauta1-2.pdf" ,
+                   "Esposende-flauta.pdf" ,
+                   "FantasmaOpera-flauta.pdf" ,
+                   "FantasmaOpera-flauta1.pdf" ,
+                   "FantasmaOpera-flauta2.pdf" ,
+                   "FateGods-flauta1-2.pdf" ,
+                   "Filarmonia-bombo-pratos-flauta.pdf" ,
+                   "FilhosNacao-flauta.pdf" ,
+                   "Gibraltar-flauta-flautim.pdf" ,
+                   "Harmonique-flauta.pdf" ,
+                   "HighlightsChess-flauta.pdf" ,
+                   "HinoPortugal-flauta1.pdf" ,
+                   "HinoPortugal-flauta2.pdf" ,
+                   "HolidayRio-flauta.pdf" ,
+                   "HomenagemJSerra-flauta1.pdf" ,
+                   "HorizonteRazao-flauta.pdf" ,
+                   "Hosanna-flauta1.pdf" ,
+                   "Hosanna-flauta2.pdf" ,
+                   "ImmerKleiner-flauta1-2-flautim.pdf" ,
+                   "InvDeus-flauta.pdf" ,
+                   "Jerusalen-flauta1.pdf" ,
+                   "Jerusalen-flauta2.pdf" ,
+                   "JuizoFinal-flauta1.pdf" ,
+                   "JuizoFinal-flauta2.pdf" ,
+                   "LaStoria-flauta1.pdf" ,
+                   "LaStoria-flauta2-flautim.pdf" ,
+                   "LaTuba-flauta.pdf" ,
+                   "LatinPop-flauta1-2.pdf" ,
+                   "Macarena-flauta1-2.pdf" ,
+                   "MomentMorricone-flauta.pdf" ,
+                   "Paquito-flauta-oboe.pdf" ,
+                   "Perola59-flauta.pdf" ,
+                   "Pilatus-flauta.pdf" ,
+                   "Pilatus-flauta1-2.pdf" ,
+                   "PoetaAldeao-flauta.pdf" ,
+                   "PtSuave-flauta1-2.pdf" ,
+                   "RossRoy-flauta1.pdf" ,
+                   "RossRoy-flauta2.pdf" ,
+                   "SBento-flauta-clarinete1.pdf" ,
+                   "SJoao-flauta.pdf" ,
+                   "SMartinho-flauta.pdf" ,
+                   "Santana-flauta1.pdf" ,
+                   "Santana-flauta2.pdf" ,
+                   "SonhosPortugal-flauta.pdf" ,
+                   "SraNossa-flauta1-2-flautim.pdf" ,
+                   "Suplica-flauta.pdf" ,
+                   "Tannhauser-flauta1.pdf" ,
+                   "Tannhauser-flauta2.pdf" ,
+                   "Tarantula-flauta-flautim.pdf" ,
+                   "VilaFranca-flauta.pdf" ,
+                   "Xabia-flauta.pdf" ,
+                   "ZePedro-flauta.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Flautim
+:Flautim rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m10 ,
+               :m19 ,
+               :m20 ,
+               :m23 ,
+               :m25 ,
+               :m27 ,
+               :m28 ,
+               :m30 ,
+               :m31 ,
+               :m33 ,
+               :m42 ,
+               :m44 ,
+               :m46 ,
+               :m51 ,
+               :m52 ,
+               :m53 ,
+               :m58 ,
+               :m60 ,
+               :m62 ,
+               :m65 ,
+               :m66 ,
+               :m68 ,
+               :m73 ;
+         :Partitura "76Trombones-flautim.pdf" ,
+                    "ABotareu-flautim.pdf" ,
+                    "AbbaMia-flautim.pdf" ,
+                    "CancoesTrad-flautim.pdf" ,
+                    "Cassiopeia-flautim.pdf" ,
+                    "Crucifixus-flautim.pdf" ,
+                    "FantasmaOpera-flautim.pdf" ,
+                    "FateGods-flautim.pdf" ,
+                    "Gibraltar-flauta-flautim.pdf" ,
+                    "HighlightsChess-flautim.pdf" ,
+                    "HinoPortugal-flautim.pdf" ,
+                    "ImmerKleiner-flauta1-2-flautim.pdf" ,
+                    "LaStoria-flauta2-flautim.pdf" ,
+                    "LatinPop-flautim.pdf" ,
+                    "Macarena-flautim.pdf" ,
+                    "Paquito-flautim.pdf" ,
+                    "Pilatus-flautim.pdf" ,
+                    "PoetaAldeao-flautim.pdf" ,
+                    "PtSuave-flautim.pdf" ,
+                    "Santana-flautim.pdf" ,
+                    "SraNossa-flauta1-2-flautim.pdf" ,
+                    "Tarantula-flauta-flautim.pdf" ,
+                    "VilaFranca-flautim.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Fliscorne
+:Fliscorne rdf:type owl:NamedIndividual ,
+                    :Instrumento ;
+           :toca :m15 ,
+                 :m33 ,
+                 :m34 ,
+                 :m44 ,
+                 :m51 ,
+                 :m55 ,
+                 :m57 ,
+                 :m59 ,
+                 :m66 ,
+                 :m70 ,
+                 :m71 ,
+                 :m72 ,
+                 :m73 ;
+           :Partitura "ABBAgold-fliscorne1.pdf" ,
+                      "ABBAgold-fliscorne2.pdf" ,
+                      "CacadoresI-fliscorne1.pdf" ,
+                      "CacadoresI-fliscorne2.pdf" ,
+                      "Crucifixus-fliscorne1-2.pdf" ,
+                      "HinoPortugal-fliscorne1.pdf" ,
+                      "HinoPortugal-fliscorne2.pdf" ,
+                      "Hosanna-fliscorne1.pdf" ,
+                      "Hosanna-fliscorne2.pdf" ,
+                      "Jerusalen-fliscorne1.pdf" ,
+                      "Jerusalen-fliscorne2.pdf" ,
+                      "LaStoria-fliscorne1.pdf" ,
+                      "LaStoria-fliscorne2.pdf" ,
+                      "LaStoria-fliscorne3.pdf" ,
+                      "LaTuba-fliscorne1.pdf" ,
+                      "LaTuba-fliscorne2.pdf" ,
+                      "MomentMorricone-fliscorne1.pdf" ,
+                      "MomentMorricone-fliscorne2-3.pdf" ,
+                      "Paquito-fliscorne1.pdf" ,
+                      "Paquito-fliscorne2.pdf" ,
+                      "SJoao-fliscorne1.pdf" ,
+                      "VilaFranca-fliscorne1.pdf" ,
+                      "VilaFranca-fliscorne2.pdf" ,
+                      "Xabia-fliscorne1.pdf" ,
+                      "Xabia-fliscorne2.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#FranzVonSuppé
+:FranzVonSuppé rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m32 ,
+                     :m60 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Guiro
+:Guiro rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m68 ;
+       :Partitura "Macarena-guiro-pandeireta-pratos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#GuitarraElétrica
+:GuitarraElétrica rdf:type owl:NamedIndividual ,
+                           :Instrumento ;
+                  :toca :m65 ;
+                  :Partitura "LatinPop-guitarra-eletrica.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#GustavoPascualFalcó
+:GustavoPascualFalcó rdf:type owl:NamedIndividual ,
+                              :Compositor ;
+                     :cria :m33 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#HaroldWalters
+:HaroldWalters rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m35 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Harpa
+:Harpa rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m31 ,
+             :m42 ,
+             :m53 ;
+       :Partitura "FantasmaOpera-harpa-piano.pdf" ,
+                  "HighlightsChess-harpa-piano.pdf" ,
+                  "Pilatus-harpa.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#IlídioCosta
+:IlídioCosta rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m1 ,
+                   :m13 ,
+                   :m2 ,
+                   :m45 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#J.Molina
+:J.Molina rdf:type owl:NamedIndividual ,
+                   :Compositor ;
+          :cria :m55 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#J.Strauss
+:J.Strauss rdf:type owl:NamedIndividual ,
+                    :Compositor ;
+           :cria :m43 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#JacobdeHaan
+:JacobdeHaan rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m29 ,
+                   :m66 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#JorgeSalgueiro
+:JorgeSalgueiro rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m44 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#JoséAlbertoPina
+:JoséAlbertoPina rdf:type owl:NamedIndividual ,
+                          :Compositor ;
+                 :cria :m51 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#JoséVelezGarcia
+:JoséVelezGarcia rdf:type owl:NamedIndividual ,
+                          :Compositor ;
+                 :cria :m71 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Lira
+:Lira rdf:type owl:NamedIndividual ,
+               :Instrumento ;
+      :toca :m10 ,
+            :m14 ,
+            :m19 ,
+            :m3 ,
+            :m44 ,
+            :m6 ;
+      :Partitura "1989-lira.pdf" ,
+                 "Filarmonia-lira-fagote.pdf" ,
+                 "SMartinho-lira.pdf" ,
+                 "SraNossa-lira-tuba-sol-sib.pdf" ,
+                 "Tarantula-lira.pdf" ,
+                 "VilaFranca-lira.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#LuísCardoso
+:LuísCardoso rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m27 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#M.TaylorD.ChildP.BarryR.Rosa
+:M.TaylorD.ChildP.BarryR.Rosa rdf:type owl:NamedIndividual ,
+                                       :Compositor ;
+                              :cria :m65 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Maestro
+:Maestro rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m1 ,
+               :m10 ,
+               :m11 ,
+               :m13 ,
+               :m14 ,
+               :m16 ,
+               :m20 ,
+               :m23 ,
+               :m27 ,
+               :m28 ,
+               :m29 ,
+               :m3 ,
+               :m32 ,
+               :m33 ,
+               :m34 ,
+               :m44 ,
+               :m46 ,
+               :m47 ,
+               :m48 ,
+               :m49 ,
+               :m51 ,
+               :m52 ,
+               :m53 ,
+               :m55 ,
+               :m56 ,
+               :m57 ,
+               :m58 ,
+               :m59 ,
+               :m6 ,
+               :m60 ,
+               :m61 ,
+               :m62 ,
+               :m63 ,
+               :m64 ,
+               :m65 ,
+               :m66 ,
+               :m67 ,
+               :m68 ,
+               :m69 ,
+               :m7 ,
+               :m70 ,
+               :m73 ,
+               :m8 ,
+               :m9 ;
+         :Partitura "1989-maestro.pdf" ,
+                    "ABBAgold-maestro.pdf" ,
+                    "ABotareu-maestro.pdf" ,
+                    "AbbaMia-maestro.pdf" ,
+                    "AveMaria-maestro.pdf" ,
+                    "BailarNespereira-maestro.pdf" ,
+                    "CMistico-maestro.pdf" ,
+                    "CancoesTrad-maestro.pdf" ,
+                    "CasaSPaulo-maestro.pdf" ,
+                    "Cassiopeia-maestro.pdf" ,
+                    "CavalariaLigeira-maestro.pdf" ,
+                    "Concha-maestro.pdf" ,
+                    "Crucifixus-maestro.pdf" ,
+                    "Esposende-maestro.pdf" ,
+                    "FantasmaOpera-maestro.pdf" ,
+                    "FateGods-maestro.pdf" ,
+                    "Filarmonia-maestro.pdf" ,
+                    "FilhosNacao-maestro.pdf" ,
+                    "Gibraltar-maestro.pdf" ,
+                    "HinoPortugal-maestro.pdf" ,
+                    "HomenagemJSerra-maestro.pdf" ,
+                    "HomenagemMVaz-maestro.pdf" ,
+                    "HorizonteRazao-maestro.pdf" ,
+                    "Hosanna-maestro.pdf" ,
+                    "ImmerKleiner-maestro.pdf" ,
+                    "InvDeus-maestro.pdf" ,
+                    "LaStoria-maestro.pdf" ,
+                    "LaTuba-maestro.pdf" ,
+                    "LatinPop-maestro.pdf" ,
+                    "Macarena-maestro.pdf" ,
+                    "MomentMorricone-maestro.pdf" ,
+                    "Paquito-maestro.pdf" ,
+                    "Perola59-maestro.pdf" ,
+                    "PoetaAldeao-maestro.pdf" ,
+                    "RossRoy-maestro.pdf" ,
+                    "SMartinho-maestro.pdf" ,
+                    "Santana-maestro.pdf" ,
+                    "SraNossa-maestro.pdf" ,
+                    "Suplica-maestro.pdf" ,
+                    "Tannhauser-maestro.pdf" ,
+                    "Transfig-maestro.pdf" ,
+                    "VilaFranca-maestro.pdf" ,
+                    "Xabia-maestro.pdf" ,
+                    "ZePedro-maestro.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Marimba
+:Marimba rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m53 ;
+         :Partitura "FantasmaOpera-marimba-sinos-vibrafone-xilofone.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#MeredithWillson
+:MeredithWillson rdf:type owl:NamedIndividual ,
+                          :Compositor ;
+                 :cria :m30 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Metalofone
+:Metalofone rdf:type owl:NamedIndividual ,
+                     :Instrumento ;
+            :toca :m56 ;
+            :Partitura "Esposende-metalofone.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#NunoOsório
+:NunoOsório rdf:type owl:NamedIndividual ,
+                     :Compositor ;
+            :cria :m26 ,
+                  :m36 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Oboé
+:Oboé rdf:type owl:NamedIndividual ,
+               :Instrumento ;
+      :toca :m10 ,
+            :m14 ,
+            :m15 ,
+            :m19 ,
+            :m23 ,
+            :m27 ,
+            :m28 ,
+            :m29 ,
+            :m30 ,
+            :m31 ,
+            :m33 ,
+            :m34 ,
+            :m42 ,
+            :m44 ,
+            :m46 ,
+            :m49 ,
+            :m51 ,
+            :m52 ,
+            :m53 ,
+            :m55 ,
+            :m56 ,
+            :m57 ,
+            :m58 ,
+            :m59 ,
+            :m60 ,
+            :m61 ,
+            :m62 ,
+            :m64 ,
+            :m65 ,
+            :m66 ,
+            :m68 ,
+            :m69 ,
+            :m7 ,
+            :m70 ,
+            :m71 ,
+            :m73 ,
+            :m9 ;
+      :Partitura "76Trombones-oboe.pdf" ,
+                 "ABBAgold-oboe.pdf" ,
+                 "ABotareu-oboe.pdf" ,
+                 "AbbaMia-oboe1.pdf" ,
+                 "AbbaMia-oboe2.pdf" ,
+                 "AveMaria-oboe.pdf" ,
+                 "CacadoresI-oboe.pdf" ,
+                 "CancoesTrad-oboe.pdf" ,
+                 "Concha-oboe.pdf" ,
+                 "Crucifixus-oboe1-2.pdf" ,
+                 "Esposende-oboe.pdf" ,
+                 "FantasmaOpera-oboe.pdf" ,
+                 "FantasmaOpera-oboe1.pdf" ,
+                 "FantasmaOpera-oboe2.pdf" ,
+                 "FateGods-oboe.pdf" ,
+                 "Filarmonia-oboe-trompa.pdf" ,
+                 "Gibraltar-oboe.pdf" ,
+                 "HighlightsChess-oboe.pdf" ,
+                 "HinoPortugal-oboe1.pdf" ,
+                 "HinoPortugal-oboe2.pdf" ,
+                 "HorizonteRazao-oboe.pdf" ,
+                 "Hosanna-oboe1.pdf" ,
+                 "Hosanna-oboe2.pdf" ,
+                 "ImmerKleiner-oboe.pdf" ,
+                 "Jerusalen-oboe.pdf" ,
+                 "LaStoria-oboe1.pdf" ,
+                 "LaStoria-oboe2.pdf" ,
+                 "LaTuba-oboe.pdf" ,
+                 "LatinPop-oboe.pdf" ,
+                 "Macarena-oboe.pdf" ,
+                 "MomentMorricone-oboe.pdf" ,
+                 "Paquito-flauta-oboe.pdf" ,
+                 "Perola59-oboe.pdf" ,
+                 "Pilatus-oboe.pdf" ,
+                 "PoetaAldeao-oboe.pdf" ,
+                 "RossRoy-oboe1.pdf" ,
+                 "RossRoy-oboe2.pdf" ,
+                 "Santana-oboe.pdf" ,
+                 "SraNossa-fagote-oboe.pdf" ,
+                 "Suplica-oboe.pdf" ,
+                 "Tannhauser-oboe.pdf" ,
+                 "Tarantula-oboe.pdf" ,
+                 "VilaFranca-oboe.pdf" ,
+                 "Xabia-oboe.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Orgão
+:Orgão rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m42 ;
+       :Partitura "Pilatus-orgao.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#OscarNavarro
+:OscarNavarro rdf:type owl:NamedIndividual ,
+                       :Compositor ;
+              :cria :m70 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Pandeireta
+:Pandeireta rdf:type owl:NamedIndividual ,
+                     :Instrumento ;
+            :toca :m25 ,
+                  :m27 ,
+                  :m49 ,
+                  :m5 ,
+                  :m55 ,
+                  :m65 ,
+                  :m68 ;
+            :Partitura "CancoesTrad-pandeireta.pdf" ,
+                       "HolidayRio-pandeireta.pdf" ,
+                       "LaTuba-ferrinhos-pandeireta.pdf" ,
+                       "LatinPop-pandeireta.pdf" ,
+                       "Macarena-guiro-pandeireta-pratos.pdf" ,
+                       "PtSuave-pandeireta.pdf" ,
+                       "Tannhauser-pandeireta.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Percussão
+:Percussão rdf:type owl:NamedIndividual ,
+                    :Instrumento ;
+           :toca :m13 ,
+                 :m20 ,
+                 :m23 ,
+                 :m25 ,
+                 :m27 ,
+                 :m28 ,
+                 :m29 ,
+                 :m31 ,
+                 :m32 ,
+                 :m46 ,
+                 :m5 ,
+                 :m50 ,
+                 :m53 ,
+                 :m57 ,
+                 :m59 ,
+                 :m62 ,
+                 :m65 ,
+                 :m66 ,
+                 :m73 ,
+                 :m74 ;
+           :Partitura "ABBAgold-percussao1.pdf" ,
+                      "ABBAgold-percussao2.pdf" ,
+                      "AbbaMia-percussao1.pdf" ,
+                      "AbbaMia-percussao2.pdf" ,
+                      "AbbaMia-percussao3.pdf" ,
+                      "AbbaMia-percussao4.pdf" ,
+                      "CancoesTrad-percussao.pdf" ,
+                      "CasaSPaulo-percussao.pdf" ,
+                      "Cassiopeia-percussao1.pdf" ,
+                      "Cassiopeia-percussao2.pdf" ,
+                      "Cassiopeia-percussao3.pdf" ,
+                      "CavalariaLigeira-percussao.pdf" ,
+                      "FantasmaOpera-percussao1.pdf" ,
+                      "FantasmaOpera-percussao2.pdf" ,
+                      "FateGods-percussao-aux.pdf" ,
+                      "Harmonique-percussao1.pdf" ,
+                      "Harmonique-percussao2.pdf" ,
+                      "HighlightsChess-percussao1-2.pdf" ,
+                      "HighlightsChess-percussao3.pdf" ,
+                      "HinoPortugal-percussao.pdf" ,
+                      "HolidayRio-percussao1.pdf" ,
+                      "HolidayRio-percussao2.pdf" ,
+                      "ImmerKleiner-percussao.pdf" ,
+                      "JuizoFinal-percussao1.pdf" ,
+                      "JuizoFinal-percussao2.pdf" ,
+                      "LaStoria-percussao1.pdf" ,
+                      "LaStoria-percussao2.pdf" ,
+                      "LatinPop-percussao.pdf" ,
+                      "MomentMorricone-percussao1.pdf" ,
+                      "MomentMorricone-percussao2.pdf" ,
+                      "PtSuave-percussao.pdf" ,
+                      "RossRoy-percussao1.pdf" ,
+                      "RossRoy-percussao2-3.pdf" ,
+                      "Santana-percussao1.pdf" ,
+                      "Santana-percussao2.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Piano
+:Piano rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m31 ,
+             :m53 ;
+       :Partitura "FantasmaOpera-harpa-piano.pdf" ,
+                  "HighlightsChess-harpa-piano.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Popular
+:Popular rdf:type owl:NamedIndividual ,
+                  :Compositor ;
+         :cria :m72 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Pratos
+:Pratos rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m10 ,
+              :m11 ,
+              :m12 ,
+              :m14 ,
+              :m19 ,
+              :m23 ,
+              :m3 ,
+              :m30 ,
+              :m33 ,
+              :m34 ,
+              :m41 ,
+              :m44 ,
+              :m49 ,
+              :m51 ,
+              :m52 ,
+              :m55 ,
+              :m56 ,
+              :m58 ,
+              :m6 ,
+              :m65 ,
+              :m67 ,
+              :m68 ,
+              :m69 ,
+              :m7 ,
+              :m70 ,
+              :m72 ,
+              :m9 ;
+        :Partitura "1989-bombo-pratos.pdf" ,
+                   "76Trombones-pratos.pdf" ,
+                   "ABotareu-bombo-pratos.pdf" ,
+                   "AveMaria-bombo-pratos.pdf" ,
+                   "Concha-bombo-pratos.pdf" ,
+                   "Crucifixus-bombo-pratos.pdf" ,
+                   "Esposende-bombo-pratos.pdf" ,
+                   "FateGods-pratos.pdf" ,
+                   "Filarmonia-bombo-pratos-flauta.pdf" ,
+                   "Gibraltar-pratos.pdf" ,
+                   "Hosanna-bombo-pratos.pdf" ,
+                   "InvDeus-bombo-pratos.pdf" ,
+                   "LaTuba-bombo-pratos.pdf" ,
+                   "LatinPop-pratos.pdf" ,
+                   "Macarena-cabaca-pratos.pdf" ,
+                   "Macarena-guiro-pandeireta-pratos.pdf" ,
+                   "Paquito-bombo-pratos.pdf" ,
+                   "SBento-bombo-pratos-XL.pdf" ,
+                   "SBento-bombo-pratos-caixa.pdf" ,
+                   "SJoao-bombo-pratos.pdf" ,
+                   "SMartinho-bombo-pratos.pdf" ,
+                   "SonhosPortugal-bombo-pratos.pdf" ,
+                   "SraNossa-bombo-caixa-pratos.pdf" ,
+                   "Suplica-bombo-pratos.pdf" ,
+                   "Tannhauser-bombo-pratos-ferrinhos.pdf" ,
+                   "Tarantula-pratos.pdf" ,
+                   "VilaFranca-bombo-pratos.pdf" ,
+                   "Xabia-bombo-pratos.pdf" ,
+                   "ZePedro-bombo-pratos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#QuintadoBill
+:QuintadoBill rdf:type owl:NamedIndividual ,
+                       :Compositor ;
+              :cria :m63 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Requinta
+:Requinta rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m10 ,
+                :m11 ,
+                :m12 ,
+                :m13 ,
+                :m14 ,
+                :m25 ,
+                :m28 ,
+                :m29 ,
+                :m3 ,
+                :m31 ,
+                :m33 ,
+                :m34 ,
+                :m44 ,
+                :m50 ,
+                :m51 ,
+                :m53 ,
+                :m55 ,
+                :m56 ,
+                :m57 ,
+                :m58 ,
+                :m59 ,
+                :m61 ,
+                :m62 ,
+                :m64 ,
+                :m66 ,
+                :m67 ,
+                :m68 ,
+                :m69 ,
+                :m7 ,
+                :m70 ,
+                :m71 ;
+          :Partitura "1989-requinta.pdf" ,
+                     "ABBAgold-requinta.pdf" ,
+                     "AbbaMia-maestro.pdf" ,
+                     "AveMaria-requinta.pdf" ,
+                     "CasaSPaulo-requinta.pdf" ,
+                     "Concha-requinta.pdf" ,
+                     "Crucifixus-requinta.pdf" ,
+                     "Esposende-requinta.pdf" ,
+                     "FantasmaOpera-requinta.pdf" ,
+                     "Filarmonia-caixa-requinta.pdf" ,
+                     "Gibraltar-requinta.pdf" ,
+                     "Harmonique-requinta.pdf" ,
+                     "HighlightsChess-requinta.pdf" ,
+                     "HorizonteRazao-requinta.pdf" ,
+                     "Hosanna-requinta.pdf" ,
+                     "ImmerKleiner-requinta.pdf" ,
+                     "InvDeus-requinta.pdf" ,
+                     "Jerusalen-requinta.pdf" ,
+                     "LaStoria-requinta.pdf" ,
+                     "LaTuba-requinta.pdf" ,
+                     "Macarena-requinta.pdf" ,
+                     "MomentMorricone-requinta.pdf" ,
+                     "Paquito-requinta.pdf" ,
+                     "Perola59-requinta.pdf" ,
+                     "PtSuave-requinta.pdf" ,
+                     "RossRoy-requinta.pdf" ,
+                     "SBento-requinta-trompete3.pdf" ,
+                     "SraNossa-clarinete1-requinta.pdf" ,
+                     "VilaFranca-requinta.pdf" ,
+                     "Xabia-requinta.pdf" ,
+                     "ZePedro-requinta.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#RichardWagner
+:RichardWagner rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m49 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#RichardWaterer
+:RichardWaterer rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m58 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#SalvadorSalvá
+:SalvadorSalvá rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m34 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Santana
+:Santana rdf:type owl:NamedIndividual ,
+                  :Compositor ;
+         :cria :m46 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#SaxAlto
+:SaxAlto rdf:type owl:NamedIndividual ,
+                  :Instrumento ;
+         :toca :m1 ,
+               :m10 ,
+               :m11 ,
+               :m12 ,
+               :m13 ,
+               :m14 ,
+               :m15 ,
+               :m19 ,
+               :m2 ,
+               :m20 ,
+               :m23 ,
+               :m25 ,
+               :m27 ,
+               :m28 ,
+               :m29 ,
+               :m3 ,
+               :m30 ,
+               :m31 ,
+               :m32 ,
+               :m33 ,
+               :m34 ,
+               :m41 ,
+               :m42 ,
+               :m44 ,
+               :m46 ,
+               :m49 ,
+               :m5 ,
+               :m50 ,
+               :m51 ,
+               :m52 ,
+               :m53 ,
+               :m55 ,
+               :m56 ,
+               :m57 ,
+               :m58 ,
+               :m59 ,
+               :m6 ,
+               :m60 ,
+               :m61 ,
+               :m62 ,
+               :m63 ,
+               :m64 ,
+               :m65 ,
+               :m66 ,
+               :m67 ,
+               :m68 ,
+               :m69 ,
+               :m7 ,
+               :m70 ,
+               :m71 ,
+               :m72 ,
+               :m73 ,
+               :m74 ,
+               :m9 ;
+         :Partitura "1989-saxA1.pdf" ,
+                    "1989-saxA2.pdf" ,
+                    "76Trombones-saxA1-2.pdf" ,
+                    "ABBAgold-saxA1.pdf" ,
+                    "ABBAgold-saxA2.pdf" ,
+                    "ABotareu-saxA1.pdf" ,
+                    "ABotareu-saxA2.pdf" ,
+                    "AbbaMia-saxA1.pdf" ,
+                    "AbbaMia-saxA2.pdf" ,
+                    "ArmindoAlves-saxA.tif" ,
+                    "AveMaria-saxA.pdf" ,
+                    "CacadoresI-saxA.pdf" ,
+                    "CancoesTrad-saxA1.pdf" ,
+                    "CancoesTrad-saxA2.pdf" ,
+                    "CasaSPaulo-saxA.pdf" ,
+                    "Cassiopeia-saxA.pdf" ,
+                    "CavalariaLigeira-saxA.pdf" ,
+                    "Concha-saxA1.pdf" ,
+                    "Concha-saxA2.pdf" ,
+                    "Crucifixus-saxA1-2.pdf" ,
+                    "Esposende-saxA1.pdf" ,
+                    "Esposende-saxA2.pdf" ,
+                    "FantasmaOpera-saxA1.pdf" ,
+                    "FantasmaOpera-saxA2.pdf" ,
+                    "FateGods-saxA1.pdf" ,
+                    "FateGods-saxA2.pdf" ,
+                    "Filarmonia-saxA-saxT.pdf" ,
+                    "FilhosNacao-saxA.pdf" ,
+                    "Gibraltar-saxA1-2.pdf" ,
+                    "Harmonique-saxA.pdf" ,
+                    "Harmonique-saxA1.pdf" ,
+                    "Harmonique-saxA2.pdf" ,
+                    "HighlightsChess-saxA1.pdf" ,
+                    "HighlightsChess-saxA2.pdf" ,
+                    "HinoPortugal-saxA1.pdf" ,
+                    "HinoPortugal-saxA2.pdf" ,
+                    "HolidayRio-saxA.pdf" ,
+                    "HomenagemJSerra-saxA.pdf" ,
+                    "HorizonteRazao-saxA.pdf" ,
+                    "Hosanna-saxA1.pdf" ,
+                    "Hosanna-saxA2.pdf" ,
+                    "ImmerKleiner-saxA.pdf" ,
+                    "InvDeus-saxA.pdf" ,
+                    "Jerusalen-saxA1.pdf" ,
+                    "Jerusalen-saxA2.pdf" ,
+                    "JuizoFinal-saxA2.pdf" ,
+                    "LaStoria-saxA1.pdf" ,
+                    "LaStoria-saxA2.pdf" ,
+                    "LaTuba-saxA1.pdf" ,
+                    "LaTuba-saxA2.pdf" ,
+                    "LatinPop-saxA1.pdf" ,
+                    "LatinPop-saxA2.pdf" ,
+                    "Macarena-saxA1.pdf" ,
+                    "Macarena-saxA2.pdf" ,
+                    "MomentMorricone-saxA.pdf" ,
+                    "Paquito-saxA1.pdf" ,
+                    "Paquito-saxA2.pdf" ,
+                    "Perola59-saxA.pdf" ,
+                    "Pilatus-saxA1.pdf" ,
+                    "Pilatus-saxA2.pdf" ,
+                    "PoetaAldeao-saxA.pdf" ,
+                    "PtSuave-saxA1-2.pdf" ,
+                    "RossRoy-saxA1.pdf" ,
+                    "RossRoy-saxA2.pdf" ,
+                    "SBento-saxA-saxS.pdf" ,
+                    "SJoao-saxA1.pdf" ,
+                    "SJoao-saxA2.pdf" ,
+                    "SMartinho-saxA.pdf" ,
+                    "Santana-saxA1.pdf" ,
+                    "Santana-saxA2.pdf" ,
+                    "SonhosPortugal-saxA.pdf" ,
+                    "SraNossa-saxA1-2.pdf" ,
+                    "Suplica-saxA.pdf" ,
+                    "Tannhauser-saxA.pdf" ,
+                    "Tarantula-saxA1.pdf" ,
+                    "Tarantula-saxA2.pdf" ,
+                    "VilaFranca-saxA.pdf" ,
+                    "Xabia-saxA1.pdf" ,
+                    "Xabia-saxA2.pdf" ,
+                    "ZePedro-saxA.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#SaxBarítono
+:SaxBarítono rdf:type owl:NamedIndividual ,
+                      :Instrumento ;
+             :toca :m1 ,
+                   :m10 ,
+                   :m11 ,
+                   :m12 ,
+                   :m14 ,
+                   :m15 ,
+                   :m16 ,
+                   :m17 ,
+                   :m18 ,
+                   :m19 ,
+                   :m2 ,
+                   :m20 ,
+                   :m22 ,
+                   :m23 ,
+                   :m25 ,
+                   :m27 ,
+                   :m28 ,
+                   :m29 ,
+                   :m3 ,
+                   :m30 ,
+                   :m31 ,
+                   :m32 ,
+                   :m33 ,
+                   :m34 ,
+                   :m36 ,
+                   :m4 ,
+                   :m42 ,
+                   :m44 ,
+                   :m46 ,
+                   :m48 ,
+                   :m49 ,
+                   :m5 ,
+                   :m50 ,
+                   :m52 ,
+                   :m53 ,
+                   :m54 ,
+                   :m55 ,
+                   :m57 ,
+                   :m58 ,
+                   :m59 ,
+                   :m6 ,
+                   :m60 ,
+                   :m61 ,
+                   :m62 ,
+                   :m63 ,
+                   :m64 ,
+                   :m65 ,
+                   :m66 ,
+                   :m67 ,
+                   :m68 ,
+                   :m7 ,
+                   :m70 ,
+                   :m71 ,
+                   :m72 ,
+                   :m73 ,
+                   :m74 ,
+                   :m8 ,
+                   :m9 ;
+             :Partitura "12Abril-saxB.jpg" ,
+                        "1989-saxB.pdf" ,
+                        "76Trombones-saxB.pdf" ,
+                        "ABBAgold-saxB.pdf" ,
+                        "ABotareu-saxB.pdf" ,
+                        "AbbaMia-saxB.pdf" ,
+                        "ArmindoAlves-saxB.tif" ,
+                        "AveMaria-saxB.pdf" ,
+                        "CMistico-saxB.pdf" ,
+                        "CacadoresI-saxB.pdf" ,
+                        "CancoesTrad-saxB.pdf" ,
+                        "Cassiopeia-saxB.pdf" ,
+                        "CavalariaLigeira-saxB.pdf" ,
+                        "FantasmaOpera-saxB.pdf" ,
+                        "FateGods-saxB.pdf" ,
+                        "Filarmonia-saxS-saxB.pdf" ,
+                        "FilhosNacao-saxB.pdf" ,
+                        "Gibraltar-saxB.pdf" ,
+                        "Harmonique-saxB.pdf" ,
+                        "HighlightsChess-saxB.pdf" ,
+                        "HinoPortugal-saxB.pdf" ,
+                        "Hispanico-saxB.pdf" ,
+                        "HolidayRio-saxB.pdf" ,
+                        "HomenagemJSerra-saxB.pdf" ,
+                        "HomenagemMVaz-saxB.jpg" ,
+                        "HomenagemVVerde-saxB.jpg" ,
+                        "HorizonteRazao-saxB.pdf" ,
+                        "Hosanna-saxB.pdf" ,
+                        "ImmerKleiner-saxB.pdf" ,
+                        "InvDeus-saxB.pdf" ,
+                        "Jerusalen-saxB.pdf" ,
+                        "Jigs-saxB.pdf" ,
+                        "JuizoFinal-saxB.pdf" ,
+                        "LaStoria-saxB.pdf" ,
+                        "LaTuba-saxB.pdf" ,
+                        "LatinPop-saxB.pdf" ,
+                        "MEslava-saxB.pdf" ,
+                        "MJAlmeida-saxB.jpg" ,
+                        "Macarena-saxB.pdf" ,
+                        "MomentMorricone-saxB.pdf" ,
+                        "Paquito-saxB.pdf" ,
+                        "Perola59-saxB.pdf" ,
+                        "Pilatus-saxB.pdf" ,
+                        "PoetaAldeao-saxB.pdf" ,
+                        "PtSuave-saxB.pdf" ,
+                        "RossRoy-saxB.pdf" ,
+                        "SBento-saxB-saxT.pdf" ,
+                        "SJoao-saxB-dig.pdf" ,
+                        "SJoao-saxB.pdf" ,
+                        "SMartinho-saxB.pdf" ,
+                        "Santana-saxB.pdf" ,
+                        "SraNossa-saxB-saxT.pdf" ,
+                        "Suplica-saxB.pdf" ,
+                        "Tannhauser-saxB.pdf" ,
+                        "Tarantula-saxB.pdf" ,
+                        "Transfig-saxB.pdf" ,
+                        "VilaFranca-saxB.pdf" ,
+                        "Xabia-saxB.pdf" ,
+                        "ZePedro-saxB.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#SaxSoprano
+:SaxSoprano rdf:type owl:NamedIndividual ,
+                     :Instrumento ;
+            :toca :m10 ,
+                  :m12 ,
+                  :m14 ,
+                  :m15 ,
+                  :m19 ,
+                  :m2 ,
+                  :m20 ,
+                  :m25 ,
+                  :m28 ,
+                  :m3 ,
+                  :m30 ,
+                  :m49 ,
+                  :m50 ,
+                  :m52 ,
+                  :m57 ,
+                  :m59 ,
+                  :m6 ,
+                  :m61 ,
+                  :m62 ,
+                  :m66 ,
+                  :m67 ,
+                  :m7 ,
+                  :m70 ,
+                  :m72 ,
+                  :m73 ;
+            :Partitura "1989-saxS.pdf" ,
+                       "76Trombones-saxS.pdf" ,
+                       "ABBAgold-saxS.pdf" ,
+                       "ABotareu-saxS.pdf" ,
+                       "AbbaMia-saxS.pdf" ,
+                       "ArmindoAlves-saxS.tif" ,
+                       "AveMaria-saxS.pdf" ,
+                       "CacadoresI-saxS.pdf" ,
+                       "Cassiopeia-saxS.pdf" ,
+                       "Filarmonia-saxS-saxB.pdf" ,
+                       "Harmonique-saxS.pdf" ,
+                       "HinoPortugal-saxS.pdf" ,
+                       "Hosanna-saxS.pdf" ,
+                       "ImmerKleiner-saxS.pdf" ,
+                       "LaStoria-saxS.pdf" ,
+                       "MomentMorricone-saxS.pdf" ,
+                       "Perola59-saxS.pdf" ,
+                       "PtSuave-saxS.pdf" ,
+                       "SBento-saxA-saxS.pdf" ,
+                       "SJoao-saxS.pdf" ,
+                       "SMartinho-saxS.pdf" ,
+                       "SraNossa-clarinete-baixo-saxS.pdf" ,
+                       "Tannhauser-saxS.pdf" ,
+                       "Tarantula-saxS.pdf" ,
+                       "ZePedro-saxS.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#SaxTenor
+:SaxTenor rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m1 ,
+                :m10 ,
+                :m11 ,
+                :m12 ,
+                :m13 ,
+                :m14 ,
+                :m15 ,
+                :m19 ,
+                :m2 ,
+                :m20 ,
+                :m23 ,
+                :m25 ,
+                :m27 ,
+                :m28 ,
+                :m29 ,
+                :m3 ,
+                :m30 ,
+                :m31 ,
+                :m32 ,
+                :m33 ,
+                :m34 ,
+                :m41 ,
+                :m42 ,
+                :m44 ,
+                :m46 ,
+                :m49 ,
+                :m5 ,
+                :m50 ,
+                :m51 ,
+                :m52 ,
+                :m53 ,
+                :m55 ,
+                :m56 ,
+                :m57 ,
+                :m58 ,
+                :m59 ,
+                :m6 ,
+                :m60 ,
+                :m61 ,
+                :m62 ,
+                :m63 ,
+                :m64 ,
+                :m65 ,
+                :m66 ,
+                :m67 ,
+                :m68 ,
+                :m69 ,
+                :m7 ,
+                :m70 ,
+                :m71 ,
+                :m72 ,
+                :m73 ,
+                :m74 ,
+                :m9 ;
+          :Partitura "1989-saxT.pdf" ,
+                     "76Trombones-saxT1-2.pdf" ,
+                     "ABBAgold-saxT.pdf" ,
+                     "ABotareu-saxT.pdf" ,
+                     "AbbaMia-saxT.pdf" ,
+                     "ArmindoAlves-saxT.tif" ,
+                     "AveMaria-saxT.pdf" ,
+                     "CacadoresI-saxT.pdf" ,
+                     "CancoesTrad-saxT.pdf" ,
+                     "CasaSPaulo-saxT.pdf" ,
+                     "Cassiopeia-saxT.pdf" ,
+                     "CavalariaLigeira-saxT.pdf" ,
+                     "Concha-saxT.pdf" ,
+                     "Crucifixus-saxT.pdf" ,
+                     "Esposende-saxT1.pdf" ,
+                     "Esposende-saxT2.pdf" ,
+                     "FantasmaOpera-saxT.pdf" ,
+                     "FateGods-saxT.pdf" ,
+                     "Filarmonia-saxA-saxT.pdf" ,
+                     "FilhosNacao-saxT.pdf" ,
+                     "Gibraltar-saxT.pdf" ,
+                     "Harmonique-saxT.pdf" ,
+                     "HighlightsChess-saxT.pdf" ,
+                     "HinoPortugal-saxT.pdf" ,
+                     "HolidayRio-saxT.pdf" ,
+                     "HomenagemJSerra-saxT.pdf" ,
+                     "HorizonteRazao-saxT.pdf" ,
+                     "Hosanna-saxT1.pdf" ,
+                     "Hosanna-saxT2.pdf" ,
+                     "ImmerKleiner-saxT.pdf" ,
+                     "InvDeus-saxT.pdf" ,
+                     "Jerusalen-saxT1.pdf" ,
+                     "Jerusalen-saxT2.pdf" ,
+                     "JuizoFinal-saxT.pdf" ,
+                     "LaStoria-saxT.pdf" ,
+                     "LaTuba-saxT1.pdf" ,
+                     "LaTuba-saxT2.pdf" ,
+                     "LatinPop-saxT.pdf" ,
+                     "Macarena-saxT.pdf" ,
+                     "MomentMorricone-saxT.pdf" ,
+                     "Paquito-saxT1.pdf" ,
+                     "Paquito-saxT2.pdf" ,
+                     "Perola59-saxT.pdf" ,
+                     "Pilatus-saxT.pdf" ,
+                     "PoetaAldeao-saxT.pdf" ,
+                     "PtSuave-saxT.pdf" ,
+                     "RossRoy-saxT.pdf" ,
+                     "SBento-saxB-saxT.pdf" ,
+                     "SJoao-saxT1.pdf" ,
+                     "SJoao-saxT2.pdf" ,
+                     "SMartinho-saxT.pdf" ,
+                     "Santana-saxT1.pdf" ,
+                     "Santana-saxT2.pdf" ,
+                     "SonhosPortugal-saxT.pdf" ,
+                     "SraNossa-saxB-saxT.pdf" ,
+                     "Suplica-saxT.pdf" ,
+                     "Tannhauser-saxT.pdf" ,
+                     "Tarantula-saxT.pdf" ,
+                     "VilaFranca-saxT.pdf" ,
+                     "Xabia-saxT.pdf" ,
+                     "ZePedro-saxT.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Sinos
+:Sinos rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m23 ,
+             :m53 ;
+       :Partitura "FantasmaOpera-marimba-sinos-vibrafone-xilofone.pdf" ,
+                  "FateGods-sinos-xilofone.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#StevenReineke
+:StevenReineke rdf:type owl:NamedIndividual ,
+                        :Compositor ;
+               :cria :m23 ,
+                     :m42 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tantã
+:Tantã rdf:type owl:NamedIndividual ,
+                :Instrumento ;
+       :toca :m44 ;
+       :Partitura "VilaFranca-castanholas-tanta.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tarola
+:Tarola rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m3 ,
+              :m44 ;
+        :Partitura "1989-tarola.pdf" ,
+                   "VilaFranca-tarola.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tchaikovsky
+:Tchaikovsky rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m22 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Trombone
+:Trombone rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m1 ,
+                :m10 ,
+                :m11 ,
+                :m12 ,
+                :m13 ,
+                :m14 ,
+                :m15 ,
+                :m19 ,
+                :m2 ,
+                :m20 ,
+                :m23 ,
+                :m25 ,
+                :m27 ,
+                :m28 ,
+                :m29 ,
+                :m3 ,
+                :m30 ,
+                :m31 ,
+                :m32 ,
+                :m33 ,
+                :m34 ,
+                :m41 ,
+                :m42 ,
+                :m44 ,
+                :m46 ,
+                :m49 ,
+                :m5 ,
+                :m50 ,
+                :m51 ,
+                :m52 ,
+                :m53 ,
+                :m55 ,
+                :m56 ,
+                :m57 ,
+                :m58 ,
+                :m59 ,
+                :m6 ,
+                :m60 ,
+                :m61 ,
+                :m62 ,
+                :m63 ,
+                :m64 ,
+                :m65 ,
+                :m66 ,
+                :m67 ,
+                :m68 ,
+                :m69 ,
+                :m7 ,
+                :m70 ,
+                :m71 ,
+                :m72 ,
+                :m73 ,
+                :m74 ,
+                :m9 ;
+          :Partitura "1989-trombone1.pdf" ,
+                     "1989-trombone2.pdf" ,
+                     "1989-trombone3.pdf" ,
+                     "76Trombones-trombone1.pdf" ,
+                     "76Trombones-trombone2-3.pdf" ,
+                     "ABBAgold-trombone1.pdf" ,
+                     "ABBAgold-trombone2.pdf" ,
+                     "ABBAgold-trombone3.pdf" ,
+                     "ABotareu-trombone1.pdf" ,
+                     "ABotareu-trombone2.pdf" ,
+                     "ABotareu-trombone3.pdf" ,
+                     "AbbaMia-trombone1.pdf" ,
+                     "AbbaMia-trombone2.pdf" ,
+                     "AbbaMia-trombone3.pdf" ,
+                     "ArmindoAlves-trombone1.tif" ,
+                     "ArmindoAlves-trombone2.tif" ,
+                     "ArmindoAlves-trombone3.tif" ,
+                     "AveMaria-trombone1-fa.pdf" ,
+                     "AveMaria-trombone1-sol.pdf" ,
+                     "AveMaria-trombone2-fa.pdf" ,
+                     "AveMaria-trombone2-sol.pdf" ,
+                     "AveMaria-trombone3-fa.pdf" ,
+                     "AveMaria-trombone3-sol.pdf" ,
+                     "CacadoresI-trombone.pdf" ,
+                     "CacadoresI-trombone1.pdf" ,
+                     "CacadoresI-trombone2.pdf" ,
+                     "CancoesTrad-trombone1.pdf" ,
+                     "CancoesTrad-trombone2.pdf" ,
+                     "CancoesTrad-trombone3.pdf" ,
+                     "CasaSPaulo-trombone1.pdf" ,
+                     "CasaSPaulo-trombone2.pdf" ,
+                     "CasaSPaulo-trombone3.pdf" ,
+                     "Cassiopeia-trombone1.pdf" ,
+                     "Cassiopeia-trombone2-3.pdf" ,
+                     "CavalariaLigeira-trombone1.pdf" ,
+                     "CavalariaLigeira-trombone2.pdf" ,
+                     "CavalariaLigeira-trombone3.pdf" ,
+                     "Concha-trombone1.pdf" ,
+                     "Concha-trombone2.pdf" ,
+                     "Concha-trombone3.pdf" ,
+                     "Crucifixus-trombone1-2.pdf" ,
+                     "Crucifixus-trombone3.pdf" ,
+                     "Esposende-trombone1.pdf" ,
+                     "Esposende-trombone2.pdf" ,
+                     "Esposende-trombone3.pdf" ,
+                     "FantasmaOpera-trombone1.pdf" ,
+                     "FantasmaOpera-trombone2.pdf" ,
+                     "FantasmaOpera-trombone3.pdf" ,
+                     "FateGods-trombone1.pdf" ,
+                     "FateGods-trombone2.pdf" ,
+                     "FateGods-trombone3.pdf" ,
+                     "Filarmonia-trombone1-eufonio.pdf" ,
+                     "Filarmonia-trombone2-3.pdf" ,
+                     "FilhosNacao-trombone1-fa.pdf" ,
+                     "FilhosNacao-trombone1-sol.pdf" ,
+                     "FilhosNacao-trombone2-fa.pdf" ,
+                     "FilhosNacao-trombone2-sol.pdf" ,
+                     "FilhosNacao-trombone3-fa.pdf" ,
+                     "FilhosNacao-trombone3.pdf" ,
+                     "Gibraltar-trombone1.pdf" ,
+                     "Gibraltar-trombone2.pdf" ,
+                     "Harmonique-trombone1.pdf" ,
+                     "Harmonique-trombone2.pdf" ,
+                     "Harmonique-trombone3.pdf" ,
+                     "HighlightsChess-trombone1.pdf" ,
+                     "HighlightsChess-trombone2.pdf" ,
+                     "HighlightsChess-trombone3.pdf" ,
+                     "HinoPortugal-trombone1.pdf" ,
+                     "HinoPortugal-trombone2.pdf" ,
+                     "HinoPortugal-trombone3.pdf" ,
+                     "HolidayRio-trombone1.pdf" ,
+                     "HolidayRio-trombone2.pdf" ,
+                     "HolidayRio-trombone3.pdf" ,
+                     "HomenagemJSerra-trombone1.pdf" ,
+                     "HomenagemJSerra-trombone2.pdf" ,
+                     "HomenagemJSerra-trombone3.pdf" ,
+                     "HorizonteRazao-trombone.pdf" ,
+                     "Hosanna-trombone1.pdf" ,
+                     "Hosanna-trombone2.pdf" ,
+                     "Hosanna-trombone3.pdf" ,
+                     "ImmerKleiner-trombone1-2.pdf" ,
+                     "ImmerKleiner-trombone3.pdf" ,
+                     "InvDeus-trombone1.pdf" ,
+                     "InvDeus-trombone2.pdf" ,
+                     "InvDeus-trombone3.pdf" ,
+                     "Jerusalen-trombone1.pdf" ,
+                     "Jerusalen-trombone2.pdf" ,
+                     "Jerusalen-trombone3.pdf" ,
+                     "JuizoFinal-trombone1.pdf" ,
+                     "JuizoFinal-trombone2.pdf" ,
+                     "JuizoFinal-trombone3.pdf" ,
+                     "LaStoria-trombone1.pdf" ,
+                     "LaStoria-trombone2.pdf" ,
+                     "LaStoria-trombone3-baixo.pdf" ,
+                     "LaTuba-trombone1.pdf" ,
+                     "LaTuba-trombone2.pdf" ,
+                     "LaTuba-trombone3.pdf" ,
+                     "LatinPop-trombone1.pdf" ,
+                     "LatinPop-trombone2.pdf" ,
+                     "Macarena-trombone1.pdf" ,
+                     "Macarena-trombone2.pdf" ,
+                     "MomentMorricone-trombone1.pdf" ,
+                     "MomentMorricone-trombone2.pdf" ,
+                     "MomentMorricone-trombone3.pdf" ,
+                     "Paquito-trombone1.pdf" ,
+                     "Paquito-trombone2.pdf" ,
+                     "Paquito-trombone3.pdf" ,
+                     "Perola59-trombone1.pdf" ,
+                     "Perola59-trombone2.pdf" ,
+                     "Perola59-trombone3.pdf" ,
+                     "Pilatus-trombone1.pdf" ,
+                     "Pilatus-trombone2-3.pdf" ,
+                     "PoetaAldeao-trombone1.pdf" ,
+                     "PoetaAldeao-trombone2.pdf" ,
+                     "PtSuave-trombone1-2.pdf" ,
+                     "RossRoy-trombone1.pdf" ,
+                     "RossRoy-trombone2.pdf" ,
+                     "SBento-trombone1-sol.pdf" ,
+                     "SBento-trombone1.pdf" ,
+                     "SBento-trombone2-3.pdf" ,
+                     "SBento-trombone2-sol.pdf" ,
+                     "SBento-trombone3-sol.pdf" ,
+                     "SJoao-trombone1.pdf" ,
+                     "SJoao-trombone2.pdf" ,
+                     "SJoao-trombone3.pdf" ,
+                     "SMartinho-trombone1.pdf" ,
+                     "SMartinho-trombone2.pdf" ,
+                     "SMartinho-trombone3.pdf" ,
+                     "Santana-trombone1.pdf" ,
+                     "Santana-trombone2.pdf" ,
+                     "Santana-trombone3.pdf" ,
+                     "SonhosPortugal-trombone1.pdf" ,
+                     "SonhosPortugal-trombone2.pdf" ,
+                     "SraNossa-trombone1-trompa3.pdf" ,
+                     "SraNossa-trombone2-3.pdf" ,
+                     "Suplica-trombone1.pdf" ,
+                     "Suplica-trombone2.pdf" ,
+                     "Tannhauser-trombone1.pdf" ,
+                     "Tannhauser-trombone2.pdf" ,
+                     "Tannhauser-trombone3.pdf" ,
+                     "Tarantula-trombone1.pdf" ,
+                     "Tarantula-trombone2.pdf" ,
+                     "Tarantula-trombone3.pdf" ,
+                     "VilaFranca-trombone1.pdf" ,
+                     "VilaFranca-trombone2.pdf" ,
+                     "Xabia-trombone1.pdf" ,
+                     "Xabia-trombone2.pdf" ,
+                     "Xabia-trombone3.pdf" ,
+                     "ZePedro-trombone1.pdf" ,
+                     "ZePedro-trombone2.pdf" ,
+                     "ZePedro-trombone3.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#TromboneBaixo
+:TromboneBaixo rdf:type owl:NamedIndividual ,
+                        :Instrumento ;
+               :toca :m25 ,
+                     :m29 ,
+                     :m30 ,
+                     :m32 ,
+                     :m44 ,
+                     :m58 ,
+                     :m60 ,
+                     :m65 ,
+                     :m66 ,
+                     :m68 ;
+               :Partitura "76Trombones-trombone-baixo.pdf" ,
+                          "CavalariaLigeira-trombone-baixo.pdf" ,
+                          "Gibraltar-trombone-baixo.pdf" ,
+                          "LaStoria-trombone3-baixo.pdf" ,
+                          "LatinPop-trombone-baixo.pdf" ,
+                          "Macarena-trombone-baixo.pdf" ,
+                          "PoetaAldeao-trombone-baixo.pdf" ,
+                          "PtSuave-trombone-baixo.pdf" ,
+                          "RossRoy-trombone-baixo.pdf" ,
+                          "VilaFranca-trombone-baixo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Trompa
+:Trompa rdf:type owl:NamedIndividual ,
+                 :Instrumento ;
+        :toca :m1 ,
+              :m10 ,
+              :m11 ,
+              :m12 ,
+              :m14 ,
+              :m15 ,
+              :m19 ,
+              :m2 ,
+              :m20 ,
+              :m23 ,
+              :m25 ,
+              :m27 ,
+              :m28 ,
+              :m29 ,
+              :m3 ,
+              :m30 ,
+              :m31 ,
+              :m32 ,
+              :m33 ,
+              :m34 ,
+              :m41 ,
+              :m42 ,
+              :m44 ,
+              :m46 ,
+              :m49 ,
+              :m5 ,
+              :m50 ,
+              :m51 ,
+              :m52 ,
+              :m53 ,
+              :m55 ,
+              :m56 ,
+              :m57 ,
+              :m58 ,
+              :m59 ,
+              :m6 ,
+              :m60 ,
+              :m61 ,
+              :m62 ,
+              :m64 ,
+              :m65 ,
+              :m66 ,
+              :m67 ,
+              :m68 ,
+              :m69 ,
+              :m7 ,
+              :m70 ,
+              :m71 ,
+              :m72 ,
+              :m73 ,
+              :m9 ;
+        :Partitura "1989-trompa1.pdf" ,
+                   "1989-trompa2.pdf" ,
+                   "1989-trompa3.pdf" ,
+                   "76Trombones-trompa1-2.pdf" ,
+                   "76Trombones-trompa3-4.pdf" ,
+                   "ABBAgold-trompa1-2.pdf" ,
+                   "ABBAgold-trompa3.pdf" ,
+                   "ABBAgold-trompa4.pdf" ,
+                   "ABotareu-trompa1.pdf" ,
+                   "ABotareu-trompa2.pdf" ,
+                   "ABotareu-trompa3.pdf" ,
+                   "AbbaMia-trompa1.pdf" ,
+                   "AbbaMia-trompa2.pdf" ,
+                   "AbbaMia-trompa3.pdf" ,
+                   "ArmindoAlves-trompa.tif" ,
+                   "AveMaria-trompa1.pdf" ,
+                   "AveMaria-trompa2.pdf" ,
+                   "AveMaria-trompa3.pdf" ,
+                   "CacadoresI-trompa1.pdf" ,
+                   "CacadoresI-trompa2.pdf" ,
+                   "CacadoresI-trompa3.pdf" ,
+                   "CacadoresI-trompa4.pdf" ,
+                   "CancoesTrad-trompaF1.pdf" ,
+                   "CancoesTrad-trompaF2.pdf" ,
+                   "CancoesTrad-trompaF3.pdf" ,
+                   "Cassiopeia-trompa1-3.pdf" ,
+                   "Cassiopeia-trompa2-4.pdf" ,
+                   "CavalariaLigeira-trompa1.pdf" ,
+                   "CavalariaLigeira-trompa2.pdf" ,
+                   "CavalariaLigeira-trompa3.pdf" ,
+                   "CavalariaLigeira-trompa4.pdf" ,
+                   "Concha-trompa1.pdf" ,
+                   "Concha-trompa2.pdf" ,
+                   "Crucifixus-trompa1-2.pdf" ,
+                   "Crucifixus-trompa3-4.pdf" ,
+                   "Esposende-trompa1.pdf" ,
+                   "Esposende-trompa2.pdf" ,
+                   "Esposende-trompa3.pdf" ,
+                   "FantasmaOpera-trompa.pdf" ,
+                   "FantasmaOpera-trompa1.pdf" ,
+                   "FantasmaOpera-trompa2.pdf" ,
+                   "FantasmaOpera-trompa3.pdf" ,
+                   "FantasmaOpera-trompa4.pdf" ,
+                   "FateGods-trompa1-2.pdf" ,
+                   "Filarmonia-oboe-trompa.pdf" ,
+                   "Filarmonia-trompa.pdf" ,
+                   "Gibraltar-trompa1-2.pdf" ,
+                   "Gibraltar-trompa3-4.pdf" ,
+                   "Harmonique-trompa.pdf" ,
+                   "HighlightsChess-trompa1-3.pdf" ,
+                   "HighlightsChess-trompa2-4.pdf" ,
+                   "HinoPortugal-trompa1.pdf" ,
+                   "HinoPortugal-trompa2.pdf" ,
+                   "HinoPortugal-trompa3.pdf" ,
+                   "HinoPortugal-trompa4.pdf" ,
+                   "HolidayRio-trompa1.pdf" ,
+                   "HolidayRio-trompa2.pdf" ,
+                   "HolidayRio-trompa3.pdf" ,
+                   "HomenagemJSerra-trompa1.pdf" ,
+                   "HomenagemJSerra-trompa3.pdf" ,
+                   "HomenagemJSerra-trompa4.pdf" ,
+                   "HorizonteRazao-trompa.pdf" ,
+                   "Hosanna-trompa1.pdf" ,
+                   "Hosanna-trompa2.pdf" ,
+                   "ImmerKleiner-trompa1-2.pdf" ,
+                   "ImmerKleiner-trompa3-4.pdf" ,
+                   "InvDeus-trompa1.pdf" ,
+                   "InvDeus-trompa2.pdf" ,
+                   "Jerusalen-trompa1.pdf" ,
+                   "Jerusalen-trompa2.pdf" ,
+                   "Jerusalen-trompa3.pdf" ,
+                   "LaStoria-trompa1.pdf" ,
+                   "LaStoria-trompa2.pdf" ,
+                   "LaStoria-trompa3-4.pdf" ,
+                   "LaTuba-trompa1.pdf" ,
+                   "LaTuba-trompa2.pdf" ,
+                   "LatinPop-trompa1-2.pdf" ,
+                   "LatinPop-trompa3-4.pdf" ,
+                   "Macarena-trompa1-2.pdf" ,
+                   "Macarena-trompa3-4.pdf" ,
+                   "MomentMorricone-trompa1.pdf" ,
+                   "MomentMorricone-trompa2.pdf" ,
+                   "MomentMorricone-trompa3.pdf" ,
+                   "Paquito-trompa1.pdf" ,
+                   "Paquito-trompa2.pdf" ,
+                   "Perola59-trompa1.pdf" ,
+                   "Perola59-trompa2.pdf" ,
+                   "Pilatus-trompa1-2.pdf" ,
+                   "PoetaAldeao-trompa1.pdf" ,
+                   "PoetaAldeao-trompa2.pdf" ,
+                   "PoetaAldeao-trompa3.pdf" ,
+                   "PoetaAldeao-trompa4.pdf" ,
+                   "PtSuave-trompa1-2.pdf" ,
+                   "PtSuave-trompa3-4.pdf" ,
+                   "RossRoy-trompa1.pdf" ,
+                   "RossRoy-trompa2.pdf" ,
+                   "RossRoy-trompa3.pdf" ,
+                   "RossRoy-trompa4.pdf" ,
+                   "SBento-trompa2.pdf" ,
+                   "SJoao-trompa1.pdf" ,
+                   "SJoao-trompa2.pdf" ,
+                   "SMartinho-trompa.pdf" ,
+                   "SMartinho-trompa1.pdf" ,
+                   "SMartinho-trompa2.pdf" ,
+                   "Santana-trompaF1.pdf" ,
+                   "Santana-trompaF2.pdf" ,
+                   "SonhosPortugal-trompa1.pdf" ,
+                   "SonhosPortugal-trompa2.pdf" ,
+                   "SraNossa-trombone1-trompa3.pdf" ,
+                   "SraNossa-trompa1-2.pdf" ,
+                   "Suplica-trompa-outras.pdf" ,
+                   "Suplica-trompa1.pdf" ,
+                   "Tannhauser-trompa1.pdf" ,
+                   "Tannhauser-trompa2.pdf" ,
+                   "Tarantula-trompa1.pdf" ,
+                   "Tarantula-trompa2.pdf" ,
+                   "Tarantula-trompa3.pdf" ,
+                   "VilaFranca-trompa1-3.pdf" ,
+                   "VilaFranca-trompa2-4.pdf" ,
+                   "Xabia-trompa-mib.pdf" ,
+                   "ZePedro-trompa1.pdf" ,
+                   "ZePedro-trompa2.pdf" ,
+                   "ZePedro-trompa3.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#TrompaTenor
+:TrompaTenor rdf:type owl:NamedIndividual ,
+                      :Instrumento ;
+             :toca :m73 ;
+             :Partitura "HinoPortugal-trompa-tenor.pdf" ,
+                        "HinoPortugal-trompa-tenor2.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Trompete
+:Trompete rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m1 ,
+                :m10 ,
+                :m11 ,
+                :m12 ,
+                :m13 ,
+                :m14 ,
+                :m15 ,
+                :m19 ,
+                :m2 ,
+                :m20 ,
+                :m23 ,
+                :m25 ,
+                :m27 ,
+                :m28 ,
+                :m29 ,
+                :m3 ,
+                :m30 ,
+                :m31 ,
+                :m32 ,
+                :m33 ,
+                :m34 ,
+                :m41 ,
+                :m42 ,
+                :m44 ,
+                :m46 ,
+                :m49 ,
+                :m5 ,
+                :m50 ,
+                :m51 ,
+                :m52 ,
+                :m53 ,
+                :m55 ,
+                :m56 ,
+                :m57 ,
+                :m59 ,
+                :m6 ,
+                :m60 ,
+                :m61 ,
+                :m63 ,
+                :m64 ,
+                :m65 ,
+                :m66 ,
+                :m67 ,
+                :m68 ,
+                :m69 ,
+                :m7 ,
+                :m70 ,
+                :m71 ,
+                :m72 ,
+                :m73 ,
+                :m74 ,
+                :m9 ;
+          :Partitura "1989-trompete1.pdf" ,
+                     "1989-trompete2.pdf" ,
+                     "1989-trompete3.pdf" ,
+                     "76Trombones-trompete1.pdf" ,
+                     "76Trombones-trompete2.pdf" ,
+                     "76Trombones-trompete3-4.pdf" ,
+                     "ABBAgold-trompete1.pdf" ,
+                     "ABBAgold-trompete2.pdf" ,
+                     "ABBAgold-trompete3.pdf" ,
+                     "ABotareu-trompete1.pdf" ,
+                     "ABotareu-trompete2.pdf" ,
+                     "ABotareu-trompete3.pdf" ,
+                     "AbbaMia-trompete1.pdf" ,
+                     "AbbaMia-trompete2.pdf" ,
+                     "AbbaMia-trompete3.pdf" ,
+                     "ArmindoAlves-trompete1.tif" ,
+                     "ArmindoAlves-trompete2.tif" ,
+                     "ArmindoAlves-trompete3.tif" ,
+                     "AveMaria-trompete1-2.pdf" ,
+                     "AveMaria-trompete3.pdf" ,
+                     "CacadoresI-trompete1.pdf" ,
+                     "CacadoresI-trompete2.pdf" ,
+                     "CacadoresI-trompete3.pdf" ,
+                     "CancoesTrad-trompete1.pdf" ,
+                     "CancoesTrad-trompete2.pdf" ,
+                     "CancoesTrad-trompete3.pdf" ,
+                     "CasaSPaulo-trompete1.pdf" ,
+                     "CasaSPaulo-trompete2.pdf" ,
+                     "CasaSPaulo-trompete3.pdf" ,
+                     "Cassiopeia-trompete1.pdf" ,
+                     "Cassiopeia-trompete2.pdf" ,
+                     "Cassiopeia-trompete3.pdf" ,
+                     "CavalariaLigeira-trompete1.pdf" ,
+                     "CavalariaLigeira-trompete2.pdf" ,
+                     "CavalariaLigeira-trompete3.pdf" ,
+                     "Concha-trompete1.pdf" ,
+                     "Concha-trompete2.pdf" ,
+                     "Crucifixus-trompete1.pdf" ,
+                     "Crucifixus-trompete2.pdf" ,
+                     "Crucifixus-trompete3.pdf" ,
+                     "Esposende-trompete1.pdf" ,
+                     "Esposende-trompete2.pdf" ,
+                     "Esposende-trompete3.pdf" ,
+                     "FantasmaOpera-trompete1.pdf" ,
+                     "FantasmaOpera-trompete2.pdf" ,
+                     "FantasmaOpera-trompete3.pdf" ,
+                     "FateGods-trompete1.pdf" ,
+                     "FateGods-trompete2.pdf" ,
+                     "FateGods-trompete3.pdf" ,
+                     "Filarmonia-trompete-clarinete2.pdf" ,
+                     "Filarmonia-trompete2-3.pdf" ,
+                     "FilhosNacao-trombone1.pdf" ,
+                     "FilhosNacao-trombone2.pdf" ,
+                     "Harmonique-trompete1.pdf" ,
+                     "Harmonique-trompete2.pdf" ,
+                     "Harmonique-trompete3.pdf" ,
+                     "HighlightsChess-trompete1.pdf" ,
+                     "HighlightsChess-trompete2.pdf" ,
+                     "HighlightsChess-trompete3.pdf" ,
+                     "HinoPortugal-trompete1.pdf" ,
+                     "HinoPortugal-trompete2.pdf" ,
+                     "HolidayRio-trompete1.pdf" ,
+                     "HolidayRio-trompete2.pdf" ,
+                     "HolidayRio-trompete3.pdf" ,
+                     "HolidayRio-trompete4.pdf" ,
+                     "HomenagemJSerra-trompete1.pdf" ,
+                     "HomenagemJSerra-trompete2.pdf" ,
+                     "HomenagemJSerra-trompete3.pdf" ,
+                     "HorizonteRazao-trompete1.pdf" ,
+                     "HorizonteRazao-trompete2.pdf" ,
+                     "HorizonteRazao-trompete3.pdf" ,
+                     "Hosanna-trompete1.pdf" ,
+                     "Hosanna-trompete2.pdf" ,
+                     "InvDeus-trompete1.pdf" ,
+                     "InvDeus-trompete2.pdf" ,
+                     "InvDeus-trompete3.pdf" ,
+                     "Jerusalen-trompete1.pdf" ,
+                     "Jerusalen-trompete2.pdf" ,
+                     "Jerusalen-trompete3.pdf" ,
+                     "JuizoFinal-trompete1.pdf" ,
+                     "JuizoFinal-trompete2.pdf" ,
+                     "JuizoFinal-trompete3.pdf" ,
+                     "LaStoria-trompete1.pdf" ,
+                     "LaStoria-trompete2.pdf" ,
+                     "LaStoria-trompete3.pdf" ,
+                     "LaTuba-trompete1.pdf" ,
+                     "LaTuba-trompete2.pdf" ,
+                     "LatinPop-trompete1.pdf" ,
+                     "LatinPop-trompete2.pdf" ,
+                     "LatinPop-trompete3.pdf" ,
+                     "Macarena-trompete-solo.pdf" ,
+                     "Macarena-trompete1.pdf" ,
+                     "Macarena-trompete2.pdf" ,
+                     "Macarena-trompete3.pdf" ,
+                     "MomentMorricone-trompete1.pdf" ,
+                     "MomentMorricone-trompete2.pdf" ,
+                     "MomentMorricone-trompete3.pdf" ,
+                     "Paquito-trompete1.pdf" ,
+                     "Paquito-trompete2.pdf" ,
+                     "Perola59-trompete1.pdf" ,
+                     "Perola59-trompete2.pdf" ,
+                     "Perola59-trompete3.pdf" ,
+                     "Pilatus-trompete1.pdf" ,
+                     "Pilatus-trompete2-3.pdf" ,
+                     "PoetaAldeao-trompete1.pdf" ,
+                     "PoetaAldeao-trompete2.pdf" ,
+                     "PtSuave-trompete1.pdf" ,
+                     "PtSuave-trompete2.pdf" ,
+                     "PtSuave-trompete3.pdf" ,
+                     "RossRoy-trompete1.pdf" ,
+                     "RossRoy-trompete2.pdf" ,
+                     "RossRoy-trompete3.pdf" ,
+                     "SBento-requinta-trompete3.pdf" ,
+                     "SBento-trompa1-2.pdf" ,
+                     "SJoao-trompete1.pdf" ,
+                     "SJoao-trompete2.pdf" ,
+                     "SMartinho-trompete1.pdf" ,
+                     "SMartinho-trompete2.pdf" ,
+                     "SMartinho-trompete3.pdf" ,
+                     "Santana-trompete1.pdf" ,
+                     "Santana-trompete2.pdf" ,
+                     "Santana-trompete3.pdf" ,
+                     "SonhosPortugal-trompete1.pdf" ,
+                     "SonhosPortugal-trompete2.pdf" ,
+                     "SonhosPortugal-trompete3.pdf" ,
+                     "SraNossa-trompete1-2-3.pdf" ,
+                     "Suplica-trompete1.pdf" ,
+                     "Suplica-trompete2.pdf" ,
+                     "Suplica-trompete3.pdf" ,
+                     "Tannhauser-trompete1.pdf" ,
+                     "Tannhauser-trompete2.pdf" ,
+                     "Tannhauser-trompete3.pdf" ,
+                     "Tarantula-trompete1.pdf" ,
+                     "Tarantula-trompete2.pdf" ,
+                     "Tarantula-trompete3.pdf" ,
+                     "VilaFranca-trompete1.pdf" ,
+                     "VilaFranca-trompete2.pdf" ,
+                     "Xabia-trompete1.pdf" ,
+                     "Xabia-trompete2.pdf" ,
+                     "ZePedro-trompete1.pdf" ,
+                     "ZePedro-trompete2.pdf" ,
+                     "ZePedro-trompete3.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tuba
+:Tuba rdf:type owl:NamedIndividual ,
+               :Instrumento ;
+      :toca :m1 ,
+            :m10 ,
+            :m11 ,
+            :m12 ,
+            :m13 ,
+            :m14 ,
+            :m15 ,
+            :m19 ,
+            :m2 ,
+            :m20 ,
+            :m23 ,
+            :m25 ,
+            :m27 ,
+            :m28 ,
+            :m29 ,
+            :m3 ,
+            :m30 ,
+            :m31 ,
+            :m32 ,
+            :m33 ,
+            :m34 ,
+            :m41 ,
+            :m42 ,
+            :m44 ,
+            :m46 ,
+            :m49 ,
+            :m5 ,
+            :m50 ,
+            :m51 ,
+            :m52 ,
+            :m53 ,
+            :m55 ,
+            :m56 ,
+            :m57 ,
+            :m58 ,
+            :m59 ,
+            :m6 ,
+            :m60 ,
+            :m61 ,
+            :m62 ,
+            :m63 ,
+            :m64 ,
+            :m65 ,
+            :m66 ,
+            :m67 ,
+            :m68 ,
+            :m7 ,
+            :m70 ,
+            :m73 ,
+            :m74 ,
+            :m9 ;
+      :Partitura "1989-tuba-sol.pdf" ,
+                 "76Trombones-tuba.pdf" ,
+                 "ABBAgold-tuba.pdf" ,
+                 "ABotareu-tuba.pdf" ,
+                 "AbbaMia-trompete1.pdf" ,
+                 "ArmindoAlves-tuba1.tif" ,
+                 "ArmindoAlves-tuba2.tif" ,
+                 "AveMaria-tuba.pdf" ,
+                 "CacadoresI-tuba-sol.pdf" ,
+                 "CacadoresI-tuba.pdf" ,
+                 "CancoesTrad-tuba.pdf" ,
+                 "CasaSPaulo-tuba-sol.pdf" ,
+                 "CasaSPaulo-tuba.pdf" ,
+                 "Cassiopeia-tuba-sol.pdf" ,
+                 "CavalariaLigeira-tuba-sol.pdf" ,
+                 "CavalariaLigeira-tuba.pdf" ,
+                 "Crucifixus-tuba.pdf" ,
+                 "Esposende-tuba.pdf" ,
+                 "FantasmaOpera-tuba-sol.pdf" ,
+                 "FantasmaOpera-tuba.pdf" ,
+                 "FateGods-trompete1.pdf" ,
+                 "Filarmonia-tuba.pdf" ,
+                 "FilhosNacao-tuba.pdf" ,
+                 "Gibraltar-tuba.pdf" ,
+                 "Harmonique-tuba.pdf" ,
+                 "HighlightsChess-tuba.pdf" ,
+                 "HinoPortugal-tuba.pdf" ,
+                 "HolidayRio-tuba-sol.pdf" ,
+                 "HomenagemJSerra-tuba-fa.pdf" ,
+                 "HomenagemJSerra-tuba.pdf" ,
+                 "HorizonteRazao-trombone.pdf" ,
+                 "Hosanna-tuba1-2.pdf" ,
+                 "ImmerKleiner-tuba.pdf" ,
+                 "InvDeus-tuba.pdf" ,
+                 "JuizoFinal-tuba.pdf" ,
+                 "LaStoria-tuba-fa.pdf" ,
+                 "LaStoria-tuba.pdf" ,
+                 "LaTuba-tuba.pdf" ,
+                 "LatinPop-tuba.pdf" ,
+                 "Macarena-tuba-fa-do.pdf" ,
+                 "Macarena-tuba-fa-fa.pdf" ,
+                 "Macarena-tuba-sol-mib.pdf" ,
+                 "Macarena-tuba-sol-sib.pdf" ,
+                 "MomentMorricone-tuba-sol.pdf" ,
+                 "Paquito-tuba.pdf" ,
+                 "Perola59-tuba-sol.pdf" ,
+                 "Pilatus-tuba.pdf" ,
+                 "PoetaAldeao-tuba.pdf" ,
+                 "PtSuave-tuba.pdf" ,
+                 "RossRoy-tuba.pdf" ,
+                 "SBento-tuba-contrabaixo.pdf" ,
+                 "SMartinho-tuba-sol.pdf" ,
+                 "SMartinho-tuba.pdf" ,
+                 "Santana-tuba.pdf" ,
+                 "Santana-tuba1-2.pdf" ,
+                 "SonhosPortugal-tuba.pdf" ,
+                 "SraNossa-contrabaixo-tuba-fa-do.pdf" ,
+                 "SraNossa-lira-tuba-sol-sib.pdf" ,
+                 "Suplica-tuba.pdf" ,
+                 "Tannhauser-tuba.pdf" ,
+                 "Tarantula-tuba.pdf" ,
+                 "VilaFranca-tuba.pdf" ,
+                 "Xabia-tuba.pdf" ,
+                 "ZePedro-tuba.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Tímpanos
+:Tímpanos rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m19 ,
+                :m20 ,
+                :m23 ,
+                :m25 ,
+                :m27 ,
+                :m28 ,
+                :m29 ,
+                :m30 ,
+                :m31 ,
+                :m41 ,
+                :m42 ,
+                :m44 ,
+                :m49 ,
+                :m51 ,
+                :m53 ,
+                :m55 ,
+                :m57 ,
+                :m58 ,
+                :m59 ,
+                :m61 ,
+                :m62 ,
+                :m64 ,
+                :m65 ,
+                :m66 ,
+                :m68 ,
+                :m69 ,
+                :m70 ,
+                :m71 ,
+                :m73 ,
+                :m74 ;
+          :Partitura "76Trombones-timpanos.pdf" ,
+                     "ABBAgold-timpanos.pdf" ,
+                     "AbbaMia-timpanos.pdf" ,
+                     "CancoesTrad-timpanos.pdf" ,
+                     "Cassiopeia-timpanos.pdf" ,
+                     "Concha-timpanos.pdf" ,
+                     "Crucifixus-timpanos.pdf" ,
+                     "FantasmaOpera-timpanos.pdf" ,
+                     "FateGods-timpanos.pdf" ,
+                     "Gibraltar-timpanos.pdf" ,
+                     "HighlightsChess-timpanos.pdf" ,
+                     "HinoPortugal-timpanos.pdf" ,
+                     "HorizonteRazao-timpanos.pdf" ,
+                     "Hosanna-timpanos.pdf" ,
+                     "ImmerKleiner-timpanos.pdf" ,
+                     "Jerusalen-timpanos.pdf" ,
+                     "JuizoFinal-timpanos.pdf" ,
+                     "LaStoria-timpanos.pdf" ,
+                     "LaTuba-timpanos.pdf" ,
+                     "LatinPop-timpanos-castanholas.pdf" ,
+                     "Macarena-timpanos-badalo.pdf" ,
+                     "MomentMorricone-timpanos.pdf" ,
+                     "Perola59-timpanos.pdf" ,
+                     "Pilatus-timpanos.pdf" ,
+                     "PtSuave-timpanos.pdf" ,
+                     "RossRoy-timpanos.pdf" ,
+                     "SonhosPortugal-timpanos.pdf" ,
+                     "Tannhauser-timpanos.pdf" ,
+                     "Tarantula-timpanos.pdf" ,
+                     "VilaFranca-timpanos.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#UlvaeusAndersson
+:UlvaeusAndersson rdf:type owl:NamedIndividual ,
+                           :Compositor ;
+                  :cria :m31 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ValdemarSequeira
+:ValdemarSequeira rdf:type owl:NamedIndividual ,
+                           :Compositor ;
+                  :cria :m12 ,
+                        :m24 ,
+                        :m47 ,
+                        :m56 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Vibrafone
+:Vibrafone rdf:type owl:NamedIndividual ,
+                    :Instrumento ;
+           :toca :m53 ;
+           :Partitura "FantasmaOpera-marimba-sinos-vibrafone-xilofone.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#VictorM.Ferrer
+:VictorM.Ferrer rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m69 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Violoncelo
+:Violoncelo rdf:type owl:NamedIndividual ,
+                     :Instrumento ;
+            :toca :m44 ;
+            :Partitura "VilaFranca-violoncelo.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#W.Scneider-Argenbuhl
+:W.Scneider-Argenbuhl rdf:type owl:NamedIndividual ,
+                               :Compositor ;
+                      :cria :m5 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#WimLaseroms
+:WimLaseroms rdf:type owl:NamedIndividual ,
+                      :Compositor ;
+             :cria :m50 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#Xilofone
+:Xilofone rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :toca :m15 ,
+                :m23 ,
+                :m29 ,
+                :m51 ,
+                :m53 ,
+                :m58 ,
+                :m61 ,
+                :m65 ,
+                :m68 ;
+          :Partitura "CacadoresI-xilofone.pdf" ,
+                     "Crucifixus-xilofone.pdf" ,
+                     "FantasmaOpera-marimba-sinos-vibrafone-xilofone.pdf" ,
+                     "FateGods-sinos-xilofone.pdf" ,
+                     "Gibraltar-xilofone.pdf" ,
+                     "LatinPop-xilofone.pdf" ,
+                     "Macarena-xilofone.pdf" ,
+                     "Perola59-xilofone.pdf" ,
+                     "RossRoy-xilofone.pdf" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#XutosePontapés
+:XutosePontapés rdf:type owl:NamedIndividual ,
+                         :Compositor ;
+                :cria :m40 .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m1
+:m1 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :IlídioCosta ;
+    :éTocadaPor :Bateria ,
+                :Caixa ,
+                :Clarinete ,
+                :Eufónio ,
+                :Fagote ,
+                :Flauta ,
+                :Maestro ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Desfile" ;
+    :Titulo "Homenagem a J. Serra;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m10
+:m10 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ÁlvaroReis ;
+     :éTocadaPor :All ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Lira ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Senhora Nossa;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m11
+:m11 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :FernandoFerreiradaCosta ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Invocação a Deus;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m12
+:m12 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ValdemarSequeira ;
+     :éTocadaPor :All ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "São Bento;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m13
+:m13 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :IlídioCosta ;
+     :éTocadaPor :Clarinete ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Casa de S. Paulo;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m14
+:m14 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AfonsoAlves ;
+     :éTocadaPor :All ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Lira ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Filarmonia;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m15
+:m15 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AmílcarMorais ;
+     :éTocadaPor :All ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Oboé ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Xilofone ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Caçadores do I;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m16
+:m16 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlexandredaFonseca ;
+     :éTocadaPor :Maestro ,
+                 :SaxBarítono ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Homenagem ao Dr Manuel Vaz;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m17
+:m17 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlexandreTeixeiraFonseca ;
+     :éTocadaPor :SaxBarítono ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Homenagem a Vila Verde;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m18
+:m18 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlexandreFonseca ;
+     :éTocadaPor :SaxBarítono ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "12 de Abril;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m19
+:m19 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AmílcarMorais ;
+     :éTocadaPor :All ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Lira ,
+                 :Oboé ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Tarântula;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m2
+:m2 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :IlídioCosta ;
+    :éTocadaPor :Bombo ,
+                :Caixa ,
+                :Clarinete ,
+                :Eufónio ,
+                :Flauta ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxSoprano ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Desfile" ;
+    :Titulo "Armindo Alves;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m20
+:m20 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :CarlosMarques ;
+     :éTocadaPor :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Cassiopeia;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m21
+:m21 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :Titulo "António Nogueira;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m22
+:m22 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :Tchaikovsky ;
+     :éTocadaPor :SaxBarítono ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Marcha Eslava;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m23
+:m23 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :StevenReineke ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Sinos ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Fate of the Gods;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m24
+:m24 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ValdemarSequeira ;
+     :Tipo "Rapsódia" ;
+     :Titulo "Vamos à Romaria;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m25
+:m25 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :CarlosMarques ;
+     :éTocadaPor :Bateria ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Pandeireta ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Rapsódia" ;
+     :Titulo "Português Suave;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m26
+:m26 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :NunoOsório ;
+     :éTocadaPor :All ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Cycles and Myths;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m27
+:m27 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :LuísCardoso ;
+     :éTocadaPor :Bateria ,
+                 :Bombo ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Ferrinhos ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pandeireta ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Rapsódia" ;
+     :Titulo "Canções da Tradição;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m28
+:m28 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ABBA ;
+     :éTocadaPor :All ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Abba Mia;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m29
+:m29 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :JacobdeHaan ;
+     :éTocadaPor :All ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :CorneInglês ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Ross Roy;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m3
+:m3 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :A.Morais ;
+    :éTocadaPor :All ,
+                :Bombo ,
+                :Clarinete ,
+                :ClarineteBaixo ,
+                :Eufónio ,
+                :Flauta ,
+                :Lira ,
+                :Maestro ,
+                :Pratos ,
+                :Requinta ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxSoprano ,
+                :SaxTenor ,
+                :Tarola ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Desfile" ;
+    :Titulo "1989;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m30
+:m30 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :MeredithWillson ;
+     :éTocadaPor :All ,
+                 :BaixoElétrico ,
+                 :Bateria ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Oboé ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "76 Trombones;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m31
+:m31 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :UlvaeusAndersson ;
+     :éTocadaPor :All ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :CorneInglês ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Harpa ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Piano ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Highlights from 'Chess';" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m32
+:m32 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :FranzVonSuppé ;
+     :éTocadaPor :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Cavalaria Ligeira;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m33
+:m33 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :GustavoPascualFalcó ;
+     :éTocadaPor :All ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Paquito Chocolatero;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m34
+:m34 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :SalvadorSalvá ;
+     :éTocadaPor :Bombo ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Xabia;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m35
+:m35 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :HaroldWalters ;
+     :éTocadaPor :All ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Bands Around the World;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m36
+:m36 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :NunoOsório ;
+     :éTocadaPor :SaxBarítono ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Hispânico;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m4
+:m4 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :CarlosMarques ;
+    :éTocadaPor :SaxBarítono ;
+    :Tipo "Marcha de Desfile" ;
+    :Titulo "Manuel Joaquim ALmeida;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m40
+:m40 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :XutosePontapés ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Xutos Medley;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m41
+:m41 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Rapsódia" ;
+     :Titulo "Sonhos de Portugal;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m42
+:m42 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :StevenReineke ;
+     :éTocadaPor :All ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Harpa ,
+                 :Oboé ,
+                 :Orgão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Pilatus: Mountain of Dragons;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m43
+:m43 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :J.Strauss ;
+     :éTocadaPor :All ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Marcha Radetzky;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m44
+:m44 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :JorgeSalgueiro ;
+     :éTocadaPor :Bombo ,
+                 :Castanholas ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :ClarineteContrabaixo ,
+                 :Contrabaixo ,
+                 :Cornetim ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Fliscorne ,
+                 :Lira ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Tantã ,
+                 :Tarola ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Violoncelo ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Vila Franca;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m45
+:m45 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :IlídioCosta ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Momentos Menores;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m46
+:m46 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :Santana ;
+     :éTocadaPor :All ,
+                 :Bateria ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Santana;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m47
+:m47 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ValdemarSequeira ;
+     :éTocadaPor :Maestro ;
+     :Tipo "Rapsódia" ;
+     :Titulo "Bailar em Nespereira;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m48
+:m48 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AntónioAlmeidadaSilva ;
+     :éTocadaPor :Maestro ,
+                 :SaxBarítono ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Transfiguração;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m49
+:m49 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :RichardWagner ;
+     :éTocadaPor :Bateria ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Contrabaixo ,
+                 :Cornetim ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Ferrinhos ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pandeireta ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Tannhauser Ouverture;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m5
+:m5 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :W.Scneider-Argenbuhl ;
+    :éTocadaPor :Bombo ,
+                :Clarinete ,
+                :ClarineteBaixo ,
+                :Congas ,
+                :Eufónio ,
+                :Flauta ,
+                :Pandeireta ,
+                :Percussão ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Concerto/Pasodoble" ;
+    :Titulo "Holiday in Rio;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m50
+:m50 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :WimLaseroms ;
+     :éTocadaPor :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Harmonique;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m51
+:m51 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :JoséAlbertoPina ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Crucifixus;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m52
+:m52 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AmílcarMorais ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Aguas do Botaréu;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m53
+:m53 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AndrewLloydWebber ;
+     :éTocadaPor :BaixoElétrico ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :CorneInglês ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Harpa ,
+                 :Maestro ,
+                 :Marimba ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Piano ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Sinos ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Vibrafone ,
+                 :Xilofone ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Fantasma da Ópera;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m54
+:m54 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :CarlosMarques ;
+     :éTocadaPor :SaxBarítono ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Jigs: Duas Danças Tradicionais Irlandesas;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m55
+:m55 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :J.Molina ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Ferrinhos ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pandeireta ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "La Tuba Bregosa;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m56
+:m56 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ValdemarSequeira ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Metalofone ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Cidade Esposende;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m57
+:m57 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :ABBA ;
+     :éTocadaPor :Bateria ,
+                 :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "ABBA Gold;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m58
+:m58 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :RichardWaterer ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Gibraltar;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m59
+:m59 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :EnnioMorricone ;
+     :éTocadaPor :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Moment for Morricone;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m6
+:m6 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :CarlosMarques ;
+    :éTocadaPor :Bombo ,
+                :Caixa ,
+                :Clarinete ,
+                :Eufónio ,
+                :Flauta ,
+                :Lira ,
+                :Maestro ,
+                :Pratos ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxSoprano ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Procissão" ;
+    :Titulo "São Martinho;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m60
+:m60 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :FranzVonSuppé ;
+     :éTocadaPor :Bateria ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "Poeta e Aldeão;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m61
+:m61 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AngeloMoreira ;
+     :éTocadaPor :Bateria ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Pérola 59;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m62
+:m62 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AdolfSchreiner ;
+     :éTocadaPor :Clarinete ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Immer Kleiner;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m63
+:m63 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :QuintadoBill ;
+     :éTocadaPor :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Filhos da Nação;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m64
+:m64 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlexandreFonseca ;
+     :éTocadaPor :Bateria ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Concerto/Pasodoble" ;
+     :Titulo "Horizonte da Razão;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m65
+:m65 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :M.TaylorD.ChildP.BarryR.Rosa ;
+     :éTocadaPor :BaixoElétrico ,
+                 :Bateria ,
+                 :Castanholas ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Congas ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :GuitarraElétrica ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pandeireta ,
+                 :Percussão ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Latin Pop Special;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m66
+:m66 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :JacobdeHaan ;
+     :éTocadaPor :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Corneta ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Abertura/Concerto" ;
+     :Titulo "La Storia;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m67
+:m67 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlexandreFonseca ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "Zé Pedro;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m68
+:m68 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :BernardinoBautistaMonteverde ;
+     :éTocadaPor :Badalo ,
+                 :Bateria ,
+                 :Bongo ,
+                 :Cabaça ,
+                 :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Congas ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Guiro ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pandeireta ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :TromboneBaixo ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ,
+                 :Xilofone ;
+     :Tipo "Ligeiro/Fantasia" ;
+     :Titulo "Macarena;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m69
+:m69 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :VictorM.Ferrer ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Concha;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m7
+:m7 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :AlbertoMadureira ;
+    :éTocadaPor :Bombo ,
+                :Caixa ,
+                :Clarinete ,
+                :Contrabaixo ,
+                :Eufónio ,
+                :Fagote ,
+                :Flauta ,
+                :Maestro ,
+                :Oboé ,
+                :Pratos ,
+                :Requinta ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxSoprano ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Procissão" ;
+    :Titulo "Avé Maria;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m70
+:m70 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :OscarNavarro ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Pratos ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Hosanna in excelsis;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m71
+:m71 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :JoséVelezGarcia ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :ClarineteBaixo ,
+                 :Contrabaixo ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Oboé ,
+                 :Requinta ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Procissão" ;
+     :Titulo "Jerusalen;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m72
+:m72 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :Popular ;
+     :éTocadaPor :Bombo ,
+                 :Caixa ,
+                 :Clarinete ,
+                 :Eufónio ,
+                 :Flauta ,
+                 :Fliscorne ,
+                 :Pratos ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :Trompete ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "S. João de Braga;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m73
+:m73 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :AlfredoKeil ;
+     :éTocadaPor :Clarinete ,
+                 :ClarineteAlto ,
+                 :ClarineteBaixo ,
+                 :Cornetim ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Flautim ,
+                 :Fliscorne ,
+                 :Maestro ,
+                 :Oboé ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxSoprano ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompa ,
+                 :TrompaTenor ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Tipo "Marcha de Desfile" ;
+     :Titulo "A Portuguesa;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m74
+:m74 rdf:type owl:NamedIndividual ,
+              :Obra ;
+     :éCriadaPor :CamillodeNardis ;
+     :éTocadaPor :Clarinete ,
+                 :Eufónio ,
+                 :Fagote ,
+                 :Flauta ,
+                 :Percussão ,
+                 :SaxAlto ,
+                 :SaxBarítono ,
+                 :SaxTenor ,
+                 :Trombone ,
+                 :Trompete ,
+                 :Tuba ,
+                 :Tímpanos ;
+     :Titulo "Juízo Final;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m8
+:m8 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :AmílcarMorais ;
+    :éTocadaPor :Maestro ,
+                :SaxBarítono ;
+    :Tipo "Marcha de Procissão" ;
+    :Titulo "Corpo Místico;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#m9
+:m9 rdf:type owl:NamedIndividual ,
+             :Obra ;
+    :éCriadaPor :A.MadureiradaSilva ;
+    :éTocadaPor :Bombo ,
+                :Caixa ,
+                :Clarinete ,
+                :ClarineteBaixo ,
+                :Eufónio ,
+                :Flauta ,
+                :Maestro ,
+                :Oboé ,
+                :Pratos ,
+                :SaxAlto ,
+                :SaxBarítono ,
+                :SaxTenor ,
+                :Trombone ,
+                :Trompa ,
+                :Trompete ,
+                :Tuba ;
+    :Tipo "Marcha de Procissão" ;
+    :Titulo "Súplica;" .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/1/obras#ÁlvaroReis
+:ÁlvaroReis rdf:type owl:NamedIndividual ,
+                     :Compositor ;
+            :cria :m10 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

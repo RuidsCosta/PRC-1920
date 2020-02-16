@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC_TPC2</keyname>
+        <title>Ontologia para um Arquivo Musical</title>
+        <subtitle>TPC2 da UC PRC do perfil de PLC 2019/2020</subtitle>
+        <bdate>2020-02-10</bdate>
+        <edate>2020-02-16</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>Rui Costa</name>
+            <identifier>A79947</identifier>
+            <email>a79947@alunos.uminho.pt</email>
+            <photo path="perfil.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        
+        <p>
+            Este trabalho semanal baseia-se na criação de uma ontologia para um arquivo musical. 
+            Além disso, pretendia-se a aplicação de quatro <i>queries</i> <b>SPARQL</b>, de modo 
+            a permitir a resposta a algumas questões.
+        </p>
+        
+        <p>
+            Em primeiro lugar defini as classes da ontologia que foram Obra, Compositor e Instrumento
+            Defini tambem relaçoes entre as diferentes classes sendo que um instrumento toca uma obra e uma obra é 
+            criada por um compositor.
+            Obras possuem tambem os atributos titulo e tipo e instrumento possui o atributo partitura.
+        </p>
+        
+        <p>
+            Para tornar possivel a integração do dataset na nossa ontologia, criei um parser em python 
+            de modo a percorrer todo o ficheiro XML que nos foi disponibilizado criando outro ficheiro 
+            no formato pretendido (turtle syntax).
+        </p>
+        
+        <p>
+            Em seguida importamos a ontologia para o GraphDB e verificamos que toda a informação se encontrava la.
+            
+        </p>
+
+        
+        
+    </abstract>
+    <deliverables>
+       
+        <deliverable path="https://github.com/citoplasme/PRc/blob/master/TPC2/PR/pr.html">Project Record HTML</deliverable>
+    </deliverables>
+</pr>
