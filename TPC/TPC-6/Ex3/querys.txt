@@ -1,0 +1,51 @@
+1- Todos os países presentes na DBPedia
+
+    select count(distinct ?p)  where {
+    ?s dbo:nationality ?p .
+    ?p a dbo:Country .
+    filter not exists {
+        ?p dbo:dissolutionYear ?d .   
+    } 
+    } 
+
+
+2- Quantidade de pessoas com o local de nascimento Barbados
+
+
+    select count(distinct ?person) as ?pessoas where {
+    ?person dbo:birthPlace ?place .
+    ?place dbo:country ?country . 
+    ?country foaf:name "Barbados"@en .
+    } 
+
+
+3- Pessoas nascidas em Barbados que foram ou sao jogadoras de Cricket
+
+    select distinct ?name where {
+    ?person dbo:birthPlace ?place .
+    ?place dbo:country ?country . 
+    ?country foaf:name "Barbados"@en .
+    ?person foaf:name ?name .
+    filter (lang(?name) = 'en')
+    optional {
+        ?team a dbo:SportsTeam . 
+        ?team a dbo:CricketTeam.
+        ?person dbo:playerInTeam ?team .
+    }
+    } 
+
+4- Quantos atores estao catalogados na DBPedia
+
+    select count(distinct ?p)  where {
+    ?p a dbo:Actor .
+    }
+
+
+5- Em que filmes foi protagonista "Christopher Lambert"? (nao tem)
+
+select distinct ?a  where {
+   ?a a dbo:Actor .
+   ?a foaf:name "Christopher Lambert"@en.
+   ?f dbo:starring ?a .
+   ?f foaf:name ?filme .
+}

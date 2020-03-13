@@ -1,0 +1,240 @@
+@prefix : <http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology> .
+
+<http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#compra
+:compra rdf:type owl:ObjectProperty ;
+        owl:inverseOf :éCompradoPor ;
+        rdfs:domain :Cliente ;
+        rdfs:range :Produto .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#vende
+:vende rdf:type owl:ObjectProperty ;
+       owl:inverseOf :éVendidoPor .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#éCompradoPor
+:éCompradoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#éVendidoPor
+:éVendidoPor rdf:type owl:ObjectProperty ;
+             rdfs:domain :Produto ;
+             rdfs:range :Loja .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#codigo
+:codigo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Produto .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Cliente ,
+                   :Loja .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Cliente ,
+                  :Loja .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Cliente
+:Cliente rdf:type owl:Class ;
+         rdfs:subClassOf :Transacao ;
+         owl:disjointWith :Produto .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Loja
+:Loja rdf:type owl:Class ;
+      rdfs:subClassOf :Transacao .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#LojaGrande
+:LojaGrande rdf:type owl:Class ;
+            rdfs:subClassOf :Loja .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Produto
+:Produto rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Transacao
+:Transacao rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Clara
+:Clara rdf:type owl:NamedIndividual ,
+                :Cliente ;
+       :email "clara@gmail.com"^^xsd:string ;
+       :nome "Clara"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Continente
+:Continente rdf:type owl:NamedIndividual ,
+                     :Loja ;
+            :email "coninente@geral.com"^^xsd:string ;
+            :nome "Continente"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Henrique
+:Henrique rdf:type owl:NamedIndividual ,
+                   :Cliente ;
+          :email "Henrique@gmail.com"^^xsd:string ;
+          :nome "Henrique"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Ikea
+:Ikea rdf:type owl:NamedIndividual ,
+               :Loja ;
+      :email "Ikea@geral.com"^^xsd:string ;
+      :nome "Ikea"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Jose
+:Jose rdf:type owl:NamedIndividual ,
+               :Cliente ;
+      :email "Jose@gmail.com"^^xsd:string ;
+      :nome "Jose"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Jumbo
+:Jumbo rdf:type owl:NamedIndividual ,
+                :Loja ;
+       :email "Jumbo@geral.com"^^xsd:string ;
+       :nome "Jumbo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Lidl
+:Lidl rdf:type owl:NamedIndividual ,
+               :Loja ;
+      :email "Lidl@geral.com"^^xsd:string ;
+      :nome "Lidl"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Pingo_Doce
+:Pingo_Doce rdf:type owl:NamedIndividual ,
+                     :Loja ;
+            :email "PingoDoce@geral.com"^^xsd:string ;
+            :nome "Pingo Doce"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Rafael
+:Rafael rdf:type owl:NamedIndividual ,
+                 :Cliente ;
+        :email "Rafael@gmail.com"^^xsd:string ;
+        :nome "Rafael"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#Rui
+:Rui rdf:type owl:NamedIndividual ,
+              :Cliente ;
+     :email "Rui@gmail.com"^^xsd:string ;
+     :nome "Rui"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p0
+:p0 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Clara ;
+    :éVendidoPor :Continente ;
+    :codigo "p000"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p1
+:p1 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Clara ;
+    :éVendidoPor :Continente ;
+    :codigo "p001"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p2
+:p2 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Clara ;
+    :éVendidoPor :Continente ;
+    :codigo "p002"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p3
+:p3 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Henrique ;
+    :éVendidoPor :Ikea ;
+    :codigo "p003"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p4
+:p4 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Jose ;
+    :éVendidoPor :Jumbo ;
+    :codigo "p004"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p5
+:p5 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Jose ;
+    :éVendidoPor :Jumbo ;
+    :codigo "p005"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p6
+:p6 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Rafael ;
+    :éVendidoPor :Lidl ;
+    :codigo "p006"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p7
+:p7 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Rafael ;
+    :éVendidoPor :Lidl ;
+    :codigo "p007"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p8
+:p8 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Rui ;
+    :éVendidoPor :Pingo_Doce ;
+    :codigo "p008"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#p9
+:p9 rdf:type owl:NamedIndividual ,
+             :Produto ;
+    :éCompradoPor :Rui ;
+    :éVendidoPor :Pingo_Doce ;
+    :codigo "p009"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

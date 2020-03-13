@@ -1,0 +1,33 @@
+Quem vende o produto p1?
+
+PREFIX : <http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#>
+
+select ?loja where{
+    :p1 a :Produto.
+    ?l a :Loja .
+    ?l :vende :p1 .
+    ?l :nome ?loja .
+}
+
+
+Que compra o produto X?
+
+PREFIX : <http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#>
+select ?cliente where {
+    :p2 a :Produto .
+    ?c a :Cliente .
+    ?c :compra :p2 .
+    ?c :nome ?cliente .
+}
+
+
+Potenciais clientes da loja Y?
+
+PREFIX : <http://www.semanticweb.org/ruicosta/ontologies/2020/2/lojas-ontology#>
+select distinct ?cliente where {
+    :Continente a :Loja .
+    :Continente :vende ?p .
+    ?c :compra ?p .
+    ?c a :Cliente .
+    ?c :nome ?cliente .
+}
