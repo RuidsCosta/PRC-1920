@@ -1,5 +1,5 @@
 <template>
-  <ListaFilmes/>
+  <ListaFilmes />
 </template>
 
 <script>

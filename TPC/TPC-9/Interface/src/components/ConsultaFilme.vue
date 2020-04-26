@@ -1,160 +1,105 @@
 <template>
-    <div v-if="!this.loaded">
-        Loading...
-    </div>
+  <div>
+    <v-alert type="warning" v-if="!filmeCarregado">
+      A carregar informação
+    </v-alert>
     <v-card class="ma-4" v-else>
-        <v-card-title class="indigo darken-4 white--text" dark>
-            <span class="headline">Filme: "{{ filme.info.titulo }}" ({{id}})</span>
-        </v-card-title>
+      <v-card-title class="indigo darken-4 white--text" dark>
+        <span class="headline">Filme: "{{ filme.info.titulo }}" ({{idFilme}})</span>
+      </v-card-title>
 
-        <v-card-text>
-            <v-container>
-            <v-row>
-                <v-col cols="2">
-                <div class="info-label">Resumo</div>
-                </v-col>
-                <v-col>
-                <div class="info-content">{{ filme.info.res }}</div>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col cols="2">
-                <div class="info-label">Data</div>
-                </v-col>
-                <v-col>
-                <div class="info-content">{{ filme.info.data }}</div>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col cols="2">
-                <div class="info-label">Língua</div>
-                </v-col>
-                <v-col>
-                <div class="info-content">{{ filme.info.lingua }}</div>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col cols="2">
-                <div class="info-label">Duração (minutos)</div>
-                </v-col>
-                <v-col>
-                <div class="info-content">{{ filme.info.duracao }}</div>
-                </v-col>
-            </v-row>
+      <v-card-text>
+        <v-container>
+          <v-row>
+            <v-col cols="2">
+              <div class="info-label">Resumo</div>
+            </v-col>
+            <v-col>
+              <div class="info-content">{{ filme.info.res }}</div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="2">
+              <div class="info-label">Data</div>
+            </v-col>
+            <v-col>
+              <div class="info-content">{{ filme.info.data }}</div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="2">
+              <div class="info-label">Duração (minutos)</div>
+            </v-col>
+            <v-col>
+              <div class="info-content">{{ filme.info.duracao }}</div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="2">
+              <div class="info-label">Índice de Popularidade</div>
+            </v-col>
+            <v-col>
+              <div class="info-content">{{ filme.info.pop }}</div>
+            </v-col>
+          </v-row>
 
-            <v-row>
-                <v-col cols="2">
-                <div class="info-label">Índice de Popularidade</div>
-                </v-col>
-                <v-col>
-                <div class="info-content">{{ filme.info.pop }}</div>
-                </v-col>
-            </v-row>
+          <Linguas :lista="filme.linguas" />
+          <Generos :lista="filme.generos" />
+          <Atores :lista="filme.atores" />
+          <Personagens :lista="filme.personagens" />
 
-            <v-row v-if="filme.atores && filme.atores.length > 0">
-                <v-col cols="2">
-                <div class="info-label">Atores</div>
-                </v-col>
-                <v-col>
-                    <div class="info-content">
-                        <ul>
-                            <li 
-                                v-for="ator in filme.atores"
-                                :key="ator.idAtor"
-                            >
-                                <a href="#">{{ ator.anome }}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </v-col>
-            </v-row>
 
-            <v-row v-if="filme.generos && filme.generos.length > 0">
-                <v-col cols="2">
-                <div class="info-label">Géneros</div>
-                </v-col>
-                <v-col>
-                    <div class="info-content">
-                        <ul>
-                            <li 
-                                v-for="genero in filme.generos"
-                                :key="genero.idGenero"
-                            >
-                                <a href="#">{{ genero.gnome }}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </v-col>
-            </v-row>
+        </v-container>
+      </v-card-text>
 
-            <v-row v-if="filme.linguas && filme.linguas.length > 0">
-                <v-col cols="2">
-                <div class="info-label">Línguas</div>
-                </v-col>
-                <v-col>
-                    <div class="info-content">
-                        <ul>
-                            <li 
-                                v-for="lingua in filme.linguas"
-                                :key="lingua.l"
-                            >
-                                <a href="#">{{ lingua.l }}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </v-col>
-            </v-row>
-
-            <v-row v-if="filme.personagens && filme.personagens.length > 0">
-                <v-col cols="2">
-                <div class="info-label">Personagens</div>
-                </v-col>
-                <v-col>
-                    <div class="info-content">
-                        <ul>
-                            <li 
-                                v-for="personagem in filme.personagens"
-                                :key="personagem.idPersonagem"
-                            >
-                                <a href="#">{{ personagem.pnome }}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </v-col>
-            </v-row>
-            </v-container>
-        </v-card-text>
-
-        <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="blue darken-1" text @click="$router.go(-1)">voltar</v-btn>
-        </v-card-actions>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <v-btn color="blue darken-1" text @click="$router.go(-1)">voltar</v-btn>
+      </v-card-actions>
     </v-card>
+
+  </div>
 </template>
 
-<script>
 
+<script>
 import axios from 'axios'
 const lhost = require("@/config/global").host;
 
+import Linguas from "@/components/filmes/Linguas.vue"
+import Generos from "@/components/filmes/Generos.vue"
+import Personagens from "@/components/filmes/Personagens.vue"
+import Atores from "@/components/filmes/Atores.vue"
+
 export default {
-  name: 'Consulta Filme',
-  props: ['id'], 
+  name: 'Consulta filme',
+
+  components: {
+    Linguas, 
+    Generos, 
+    Atores, 
+    Personagens
+  },
+
+  props: ["idFilme"],
+
   data: () => ({
+    filme : [],
+    filmeCarregado : false,
+
     footer_props: {
       "items-per-page-text": "Mostrar",
-      "items-per-page-options": [10, 20, 50, 100, -1],
+      "items-per-page-options": [10,20,50,100,-1],
       "items-per-page-all-text": "Todos"
-    }, 
-  filme: {},
-  loaded: false
+    }
   }),
 
   created: async function(){
     try {
-      let response = await axios.get(lhost + "/filmes/" + this.id);
+      let response = await axios.get(lhost + "/filmes/"+ this.idFilme);
       this.filme = response.data
-      this.loaded = true;
+      this.filme.atores.sort((a,b) => a.anome > b.anome ? 1 : -1)
+      this.filmeCarregado = true
     } 
     catch (e) {
       return e;
@@ -162,10 +107,9 @@ export default {
   },
 
   methods: {
-    
   }
+  
 }
-
 </script>
 
 <style>
