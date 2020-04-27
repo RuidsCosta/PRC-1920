@@ -1,0 +1,21 @@
+
+Todos os netos do I1
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+
+select ?pnome ?neto ?nnome where{
+    :I1 :name ?pnome.
+    :I1 :hasGrandChild ?neto.
+    ?neto :name ?nnome.
+}
+
+
+
+Todos os irmaos
+
+select ?a ?anome ?b ?bnome where { 
+	?a :name ?anome.
+    ?b :name ?bnome.
+    ?a :hasSibling ?b
+    filter(?a != ?b)
+} limit 100 
