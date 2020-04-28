@@ -1,0 +1,36 @@
+TPC 10
+
+Da ontologia sobre a arvore geneológica fazer querys sparql para apanhar as seguintes entidades:
+    - tios              -> o avo do sobrinho é pai do tio
+    - primos            -> têm o mesmo avo
+    - ancestrais        -> avo ou pai
+    - descendentes      -> filho ou neto
+    - cunhado           -> pai/mae do primo do filho que não é irmao
+    - sogro / sogra     -> avo do filho que nao é pai/mae
+
+
+De momento na ontologia temos as seguintes Object Properties:
+    - hasBrother
+    - hasChilhd
+    - hasDaughter
+    - hasFather
+    - hasGrandChild
+    - hasGrandDaughter
+    - hasGrandFather
+    - hasGrandMother
+    - hasGrandParent
+    - hasGrandSon
+    - hasMother
+    - hasParent
+    - hasSibling
+    - hasSister
+    - hasSon
+
+
+Adicionar essas relações à ontologia
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+- Ir buscar os tios
+
+    select ?s ?sob ?t ?tio where { 
+        ?s :name ?sob.
+        ?t :name ?tio.
+        ?f :hasGrandChild ?c.
+        ?f :hasChild ?t.
+        filter(?t != ?f)
+    } limit 100 
+
+
+- Ir buscar os primos
+    select ?p1 ?primo1 ?p2 ?primo2 where { 
+        ?p1 :name ?primo1.
+        ?p2 :name ?primo2.
+        ?a :hasGrandChild ?p1.
+        ?a :hasGrandChild ?p2.
+        ?c1 :hasChild ?p1.
+        ?c2 :hasChild ?p2.
+        filter(?c1 != ?c2 && ?p1 != ?p2)
+    } limit 100 
+
+
+- Ir buscar os ancestrais
+    select DISTINCT ?a ?ancestral ?s ?sujeito where { 
+        ?a :name ?ancestral.
+        ?s :name ?sujeito.
+        {?a :hasGrandChild ?s.} UNION {?a :hasChild ?s.}
+    } LIMIT 100
+
+
+- Ir buscar os descendentes
+    select DISTINCT ?d ?descendente ?s ?sujeito where { 
+        ?d :name ?descendente.
+        ?s :name ?sujeito.
+        {?d :hasGrandParent ?s.} UNION {?d :hasParent ?s.}
+    } LIMIT 100
+
+
+- Ir buscar os cunhados
+    select DISTINCT ?c ?cunhado ?s ?sujeito where { 
+        ?c :name ?cunhado.
+        ?s :name ?sujeito.
+        ?a :hasGrandChild ?p1.
+        ?a :hasGrandChild ?p2.
+        ?s :hasChild ?p1.
+        ?c :hasChild ?p2.
+        filter(?S != ?c && ?p1 != ?p2)
+        ?c !:hasSibling ?s.
+    } LIMIT 100
+
+
+- Ir buscar os sogros
+    select DISTINCT ?sg ?sogro ?s ?sujeito where { 
+        ?sg :name ?sogro.
+        ?s :name ?sujeito.
+        ?sg :hasGrandChild ?p1.
+        ?s :hasChild ?p1.
+        ?sg !:hasChild ?s.
+    } LIMIT 100
