@@ -1,0 +1,805 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Abilio_Silva_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Abilio_Silva_Ramalho .
+
+:Custodia_Azevedo_1867 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Custodia_Azevedo_1867 .
+
+:Manuel_Silva_Ramalho_1866 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Albina_Esteves_Araujo_1910 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Albina_Esteves_Araujo_1910 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Maria_Margarida_Ribeiro_1954 .
+
+:Maria_Margarida_Ribeiro_1954 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 ;
+	:temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Ana_Silva_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Ana_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Arminda_Silva_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Arminda_Silva_Ramalho .
+
+:Emilia_Esteves_Araujo_1908 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Emilia_Esteves_Araujo_1908 .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Filomena_Esteves_Araujo_1927 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Filomena_Esteves_Araujo_1927 .
+
+:Florinda_Alves_Santos :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Florinda_Alves_Santos .
+
+:Florinda_Alves_Santos :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Florinda_Alves_Santos .
+
+:Generosa_Silva_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Generosa_Silva_Ramalho .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Maria_Esteves_Araujo_1912 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Maria_Esteves_Araujo_1912 .
+
+:Marcal_Aristides_Costa_Leite_1909 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Otilia_Araujo_Leite_1944 .
+
+:Maria_Otilia_Araujo_Leite_1944 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Ilda_Santos_Ramalho_1949 ;
+	:temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Maria_Alves_Santos_1906 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Otilia_Araujo_Leite_1944 .
+
+:Maria_Otilia_Araujo_Leite_1944 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Luis_Esteves_Araujo_1918 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Luis_Esteves_Araujo_1918 .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Sara_Esteves_Araujo_1914 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Sara_Esteves_Araujo_1914 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Maria_Margarida_Ribeiro_1954 .
+
+:Maria_Margarida_Ribeiro_1954 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Virginia_Esteves_Araujo_1921 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Virginia_Esteves_Araujo_1921 .
+
+:Abilio_Silva_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Abilio_Silva_Ramalho .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Rui_Alberto_Araujo_Leite_1948 .
+
+:Ana_Silva_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Ana_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Arminda_Silva_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Arminda_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Ezequiel_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Generosa_Silva_Ramalho .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Maria_Flora_Araujo_Leite_1941 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Ilda_Santos_Ramalho_1949 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Jose_Santos_Ramalho_1942 .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Manuel_Fernando_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Maria_Flora_Santos_Ramalho .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAncestral :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAncestral :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAncestral :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAncestral :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eAncestral :Maria_Helena_Leite_Ramalho_1968 .

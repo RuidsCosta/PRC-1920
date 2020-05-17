@@ -1,0 +1,243 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Abilio_Silva_Ramalho :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Abilio_Silva_Ramalho ;
+	:temNeto :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Abilio_Silva_Ramalho ;
+	:temNeto :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :eNetoDe :Antonio_Silva_Ramalho .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Ana_Margarida_Ribeiro_Leite_1980 ;
+	:temNeto :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temAvoM :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAvoM :Rui_Alberto_Araujo_Leite_1948 ;
+	:temNeto :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :eNetoDe :Henrique_Luiz_Araujo_1867 ;
+	:temAvoM :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAvoM :Rui_Alberto_Araujo_Leite_1948 ;
+	:temNeto :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :eNetoDe :Marcal_Costa_Leite .
+
+:Ana_Silva_Ramalho :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Ana_Silva_Ramalho ;
+	:temNeto :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Ana_Silva_Ramalho ;
+	:temNeto :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :eNetoDe :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Antonio_Silva_Ramalho_1904 ;
+	:temNeto :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Antonio_Silva_Ramalho_1904 ;
+	:temNeto :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eNetoDe :Antonio_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Arminda_Silva_Ramalho ;
+	:temNeto :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Arminda_Silva_Ramalho ;
+	:temNeto :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :eNetoDe :Antonio_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Ezequiel_Silva_Ramalho ;
+	:temNeto :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Ezequiel_Silva_Ramalho ;
+	:temNeto :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :eNetoDe :Antonio_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temAvoM :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eAvoM :Generosa_Silva_Ramalho ;
+	:temNeto :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :eNetoDe :Jose_Francisco_Ramos_Mouco ;
+	:temAvoM :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eAvoM :Generosa_Silva_Ramalho ;
+	:temNeto :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :eNetoDe :Antonio_Silva_Ramalho .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temAvoM :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAvoM :Henrique_Marcal_Araujo_Leite_1943 ;
+	:temNeto :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eNetoDe :Henrique_Luiz_Araujo_1867 ;
+	:temAvoM :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAvoM :Henrique_Marcal_Araujo_Leite_1943 ;
+	:temNeto :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eNetoDe :Marcal_Costa_Leite .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Henrique_Miguel_Cabrita_Araujo_Leite_1971 ;
+	:temNeto :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Ilda_Santos_Ramalho_1949 :temAvoM :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAvoM :Ilda_Santos_Ramalho_1949 ;
+	:temNeto :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :eNetoDe :Manuel_Silva_Ramalho_1866 ;
+	:temAvoM :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAvoM :Ilda_Santos_Ramalho_1949 ;
+	:temNeto :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :eNetoDe :Joze_Silva_Santos_1879 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Isabel_Maria_Cabrita_Araujo_Leite_1971 ;
+	:temNeto :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Jose_Carlos_Leite_Ramalho_1967 ;
+	:temNeto :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 ;
+	:temAvoM :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAvoM :Jose_Carlos_Leite_Ramalho_1967 ;
+	:temNeto :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :eNetoDe :Antonio_Silva_Ramalho_1904 .
+
+:Maria_Flora_Araujo_Leite_1941 :temAvoM :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eAvoM :Maria_Flora_Araujo_Leite_1941 ;
+	:temNeto :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :eNetoDe :Henrique_Luiz_Araujo_1867 ;
+	:temAvoM :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eAvoM :Maria_Flora_Araujo_Leite_1941 ;
+	:temNeto :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :eNetoDe :Marcal_Costa_Leite .
+
+:Jose_Santos_Ramalho_1942 :temAvoM :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAvoM :Jose_Santos_Ramalho_1942 ;
+	:temNeto :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :eNetoDe :Manuel_Silva_Ramalho_1866 ;
+	:temAvoM :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAvoM :Jose_Santos_Ramalho_1942 ;
+	:temNeto :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :eNetoDe :Joze_Silva_Santos_1879 .
+
+:Manuel_Carlos_Santos_Ramalho :temAvoM :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAvoM :Manuel_Carlos_Santos_Ramalho ;
+	:temNeto :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :eNetoDe :Manuel_Silva_Ramalho_1866 ;
+	:temAvoM :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAvoM :Manuel_Carlos_Santos_Ramalho ;
+	:temNeto :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :eNetoDe :Joze_Silva_Santos_1879 .
+
+:Manuel_Fernando_Santos_Ramalho :temAvoM :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAvoM :Manuel_Fernando_Santos_Ramalho ;
+	:temNeto :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :eNetoDe :Manuel_Silva_Ramalho_1866 ;
+	:temAvoM :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAvoM :Manuel_Fernando_Santos_Ramalho ;
+	:temNeto :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :eNetoDe :Joze_Silva_Santos_1879 .
+
+:Maria_Flora_Santos_Ramalho :temAvoM :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eAvoM :Maria_Flora_Santos_Ramalho ;
+	:temNeto :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :eNetoDe :Manuel_Silva_Ramalho_1866 ;
+	:temAvoM :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eAvoM :Maria_Flora_Santos_Ramalho ;
+	:temNeto :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :eNetoDe :Joze_Silva_Santos_1879 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Maria_Helena_Leite_Ramalho_1968 ;
+	:temNeto :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 ;
+	:temAvoM :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eAvoM :Maria_Helena_Leite_Ramalho_1968 ;
+	:temNeto :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :eNetoDe :Antonio_Silva_Ramalho_1904 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temAvoM :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eAvoM :Teresa_Maria_Ribeiro_Leite_1985 ;
+	:temNeto :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :eNetoDe :Marcal_Aristides_Costa_Leite_1909 .

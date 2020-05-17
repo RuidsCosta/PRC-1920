@@ -1,0 +1,51 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Manuel_Silva_Ramalho_1866 :temSexo :Masculino .
+
+:Custodia_Azevedo_1867 :temSexo :Feminino .
+
+:Jose_Francisco_Ramos_Mouco :temSexo :Masculino .
+
+:Maria_Goncalves_Azevedo :temSexo :Feminino .
+
+:Antonio_Silva_Ramalho :temSexo :Masculino .
+
+:Maria_Dias_Reis :temSexo :Feminino .
+
+:Henrique_Luiz_Araujo_1867 :temSexo :Masculino .
+
+:Maria_Araujo_1884 :temSexo :Feminino .
+
+:Rui_Alberto_Araujo_Leite_1948 :temSexo :Masculino .
+
+:Maria_Margarida_Ribeiro_1954 :temSexo :Feminino .
+
+:Marcal_Aristides_Costa_Leite_1909 :temSexo :Masculino .
+
+:Maria_Esteves_Araujo_1912 :temSexo :Feminino .
+
+:Joze_Silva_Santos_1879 :temSexo :Masculino .
+
+:Christina_Rosa_Silva_Santos_1879 :temSexo :Feminino .
+
+:Marcal_Costa_Leite :temSexo :Masculino .
+
+:Flora_Castilho_Couto_Leite :temSexo :Feminino .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temSexo :Masculino .
+
+:Maria_Otilia_Araujo_Leite_1944 :temSexo :Feminino .
+
+:Antonio_Silva_Ramalho_1904 :temSexo :Masculino .
+
+:Maria_Alves_Santos_1906 :temSexo :Feminino .
+
+:Jose_Santos_Ramalho_1942 :temSexo :Masculino .
+
+:Maria_Flora_Araujo_Leite_1941 :temSexo :Feminino .

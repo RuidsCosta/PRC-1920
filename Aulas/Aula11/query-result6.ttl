@@ -1,0 +1,279 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Abilio_Silva_Ramalho :temIrmao :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temIrmao :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temIrmao :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temIrmao :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temIrmao :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temIrmao :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temIrmao :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temIrmao :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temIrmao :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temIrmao :Abilio_Silva_Ramalho .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Albina_Esteves_Araujo_1910 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temIrmao :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temIrmao :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temIrmao :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temIrmao :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temIrmao :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temIrmao :Rui_Alberto_Araujo_Leite_1948 .
+
+:Ana_Silva_Ramalho :temIrmao :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temIrmao :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temIrmao :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temIrmao :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temIrmao :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temIrmao :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temIrmao :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temIrmao :Ana_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :temIrmao :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temIrmao :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temIrmao :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temIrmao :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temIrmao :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temIrmao :Antonio_Silva_Ramalho_1904 .
+
+:Arminda_Silva_Ramalho :temIrmao :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temIrmao :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temIrmao :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temIrmao :Arminda_Silva_Ramalho .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Emilia_Esteves_Araujo_1908 .
+
+:Ezequiel_Silva_Ramalho :temIrmao :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temIrmao :Ezequiel_Silva_Ramalho .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Filomena_Esteves_Araujo_1927 .
+
+:Florinda_Alves_Santos :temIrmao :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temIrmao :Florinda_Alves_Santos .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temIrmao :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temIrmao :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Maria_Esteves_Araujo_1912 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temIrmao :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temIrmao :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :temIrmao :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temIrmao :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temIrmao :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temIrmao :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temIrmao :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temIrmao :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temIrmao :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temIrmao :Ilda_Santos_Ramalho_1949 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temIrmao :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temIrmao :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Santos_Ramalho_1942 :temIrmao :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temIrmao :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temIrmao :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temIrmao :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temIrmao :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temIrmao :Jose_Santos_Ramalho_1942 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Luis_Esteves_Araujo_1918 .
+
+:Manuel_Carlos_Santos_Ramalho :temIrmao :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temIrmao :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temIrmao :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temIrmao :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temIrmao :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temIrmao :Manuel_Fernando_Santos_Ramalho .
+
+:Sara_Esteves_Araujo_1914 :temIrmao :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :temIrmao :Sara_Esteves_Araujo_1914 .

@@ -1,0 +1,295 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Abilio_Silva_Ramalho :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Abilio_Silva_Ramalho .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temProgenitorGrau2 :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eProgenitorGrau2 :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temProgenitorGrau2 :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eProgenitorGrau2 :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temProgenitorGrau2 :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eProgenitorGrau2 :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temProgenitorGrau2 :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eProgenitorGrau2 :Rui_Alberto_Araujo_Leite_1948 .
+
+:Ana_Silva_Ramalho :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Ana_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Arminda_Silva_Ramalho :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Arminda_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Ezequiel_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temProgenitorGrau2 :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :eProgenitorGrau2 :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temProgenitorGrau2 :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :eProgenitorGrau2 :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temProgenitorGrau2 :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :eProgenitorGrau2 :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :temProgenitorGrau2 :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :eProgenitorGrau2 :Generosa_Silva_Ramalho .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temProgenitorGrau2 :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eProgenitorGrau2 :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temProgenitorGrau2 :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eProgenitorGrau2 :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temProgenitorGrau2 :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eProgenitorGrau2 :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temProgenitorGrau2 :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eProgenitorGrau2 :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :temProgenitorGrau2 :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eProgenitorGrau2 :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temProgenitorGrau2 :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eProgenitorGrau2 :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temProgenitorGrau2 :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eProgenitorGrau2 :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :temProgenitorGrau2 :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eProgenitorGrau2 :Ilda_Santos_Ramalho_1949 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eProgenitorGrau2 :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :temProgenitorGrau2 :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eProgenitorGrau2 :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Maria_Flora_Araujo_Leite_1941 :temProgenitorGrau2 :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :eProgenitorGrau2 :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temProgenitorGrau2 :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :eProgenitorGrau2 :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temProgenitorGrau2 :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :eProgenitorGrau2 :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temProgenitorGrau2 :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :eProgenitorGrau2 :Maria_Flora_Araujo_Leite_1941 .
+
+:Jose_Santos_Ramalho_1942 :temProgenitorGrau2 :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eProgenitorGrau2 :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temProgenitorGrau2 :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eProgenitorGrau2 :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temProgenitorGrau2 :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eProgenitorGrau2 :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temProgenitorGrau2 :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eProgenitorGrau2 :Jose_Santos_Ramalho_1942 .
+
+:Manuel_Carlos_Santos_Ramalho :temProgenitorGrau2 :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eProgenitorGrau2 :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temProgenitorGrau2 :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eProgenitorGrau2 :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temProgenitorGrau2 :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eProgenitorGrau2 :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :temProgenitorGrau2 :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eProgenitorGrau2 :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temProgenitorGrau2 :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eProgenitorGrau2 :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temProgenitorGrau2 :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eProgenitorGrau2 :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temProgenitorGrau2 :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eProgenitorGrau2 :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :temProgenitorGrau2 :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eProgenitorGrau2 :Manuel_Fernando_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temProgenitorGrau2 :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eProgenitorGrau2 :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temProgenitorGrau2 :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eProgenitorGrau2 :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temProgenitorGrau2 :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :eProgenitorGrau2 :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :temProgenitorGrau2 :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :eProgenitorGrau2 :Maria_Flora_Santos_Ramalho .
+
+:Maria_Helena_Leite_Ramalho_1968 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temProgenitorGrau2 :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eProgenitorGrau2 :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :temProgenitorGrau2 :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eProgenitorGrau2 :Maria_Helena_Leite_Ramalho_1968 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temProgenitorGrau2 :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eProgenitorGrau2 :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :temProgenitorGrau2 :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eProgenitorGrau2 :Teresa_Maria_Ribeiro_Leite_1985 .

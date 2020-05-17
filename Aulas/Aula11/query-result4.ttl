@@ -1,0 +1,277 @@
+@prefix : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+:Abilio_Silva_Ramalho :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Abilio_Silva_Ramalho .
+
+:Abilio_Silva_Ramalho :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Abilio_Silva_Ramalho .
+
+:Custodia_Azevedo_1867 :eFilhoDe :Maria_Goncalves_Azevedo .
+
+:Maria_Goncalves_Azevedo :temFilho :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :eFilhoDe :Jose_Francisco_Ramos_Mouco .
+
+:Jose_Francisco_Ramos_Mouco :temFilho :Custodia_Azevedo_1867 .
+
+:Manuel_Silva_Ramalho_1866 :eFilhoDe :Antonio_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho :temFilho :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :eFilhoDe :Maria_Dias_Reis .
+
+:Maria_Dias_Reis :temFilho :Manuel_Silva_Ramalho_1866 .
+
+:Albina_Esteves_Araujo_1910 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Albina_Esteves_Araujo_1910 .
+
+:Albina_Esteves_Araujo_1910 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Albina_Esteves_Araujo_1910 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :eFilhoDe :Maria_Margarida_Ribeiro_1954 .
+
+:Maria_Margarida_Ribeiro_1954 :temFilho :Ana_Margarida_Ribeiro_Leite_1980 .
+
+:Ana_Margarida_Ribeiro_Leite_1980 :eFilhoDe :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temFilho :Ana_Margarida_Ribeiro_Leite_1980 ;
+	:eFilhoDe :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temFilho :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :eFilhoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :temFilho :Rui_Alberto_Araujo_Leite_1948 .
+
+:Ana_Silva_Ramalho :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Ana_Silva_Ramalho .
+
+:Ana_Silva_Ramalho :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Ana_Silva_Ramalho .
+
+:Antonio_Silva_Ramalho_1904 :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Antonio_Silva_Ramalho_1904 .
+
+:Arminda_Silva_Ramalho :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Arminda_Silva_Ramalho .
+
+:Arminda_Silva_Ramalho :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Arminda_Silva_Ramalho .
+
+:Emilia_Esteves_Araujo_1908 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Emilia_Esteves_Araujo_1908 .
+
+:Emilia_Esteves_Araujo_1908 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Emilia_Esteves_Araujo_1908 .
+
+:Ezequiel_Silva_Ramalho :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Ezequiel_Silva_Ramalho .
+
+:Ezequiel_Silva_Ramalho :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Ezequiel_Silva_Ramalho .
+
+:Filomena_Esteves_Araujo_1927 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Filomena_Esteves_Araujo_1927 .
+
+:Filomena_Esteves_Araujo_1927 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Filomena_Esteves_Araujo_1927 .
+
+:Florinda_Alves_Santos :eFilhoDe :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :temFilho :Florinda_Alves_Santos .
+
+:Florinda_Alves_Santos :eFilhoDe :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :temFilho :Florinda_Alves_Santos .
+
+:Generosa_Silva_Ramalho :eFilhoDe :Custodia_Azevedo_1867 .
+
+:Custodia_Azevedo_1867 :temFilho :Generosa_Silva_Ramalho .
+
+:Generosa_Silva_Ramalho :eFilhoDe :Manuel_Silva_Ramalho_1866 .
+
+:Manuel_Silva_Ramalho_1866 :temFilho :Generosa_Silva_Ramalho .
+
+:Henrique_Luis_Esteves_Araujo_1924 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Luis_Esteves_Araujo_1924 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Henrique_Luis_Esteves_Araujo_1924 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eFilhoDe :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temFilho :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :eFilhoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :temFilho :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Maria_Esteves_Araujo_1912 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Maria_Esteves_Araujo_1912 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eFilhoDe :Flora_Castilho_Couto_Leite .
+
+:Flora_Castilho_Couto_Leite :temFilho :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :eFilhoDe :Marcal_Costa_Leite .
+
+:Marcal_Costa_Leite :temFilho :Marcal_Aristides_Costa_Leite_1909 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :eFilhoDe :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temFilho :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Henrique_Miguel_Cabrita_Araujo_Leite_1971 :eFilhoDe :Maria_Otilia_Araujo_Leite_1944 .
+
+:Maria_Otilia_Araujo_Leite_1944 :temFilho :Henrique_Miguel_Cabrita_Araujo_Leite_1971 .
+
+:Ilda_Santos_Ramalho_1949 :eFilhoDe :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temFilho :Ilda_Santos_Ramalho_1949 .
+
+:Ilda_Santos_Ramalho_1949 :eFilhoDe :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temFilho :Ilda_Santos_Ramalho_1949 ;
+	:eFilhoDe :Christina_Rosa_Silva_Santos_1879 .
+
+:Christina_Rosa_Silva_Santos_1879 :temFilho :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :eFilhoDe :Joze_Silva_Santos_1879 .
+
+:Joze_Silva_Santos_1879 :temFilho :Maria_Alves_Santos_1906 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :eFilhoDe :Henrique_Marcal_Araujo_Leite_1943 .
+
+:Henrique_Marcal_Araujo_Leite_1943 :temFilho :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Isabel_Maria_Cabrita_Araujo_Leite_1971 :eFilhoDe :Maria_Otilia_Araujo_Leite_1944 .
+
+:Maria_Otilia_Araujo_Leite_1944 :temFilho :Isabel_Maria_Cabrita_Araujo_Leite_1971 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :eFilhoDe :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temFilho :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Jose_Carlos_Leite_Ramalho_1967 :eFilhoDe :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temFilho :Jose_Carlos_Leite_Ramalho_1967 .
+
+:Maria_Flora_Araujo_Leite_1941 :eFilhoDe :Maria_Esteves_Araujo_1912 .
+
+:Maria_Esteves_Araujo_1912 :temFilho :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :eFilhoDe :Marcal_Aristides_Costa_Leite_1909 .
+
+:Marcal_Aristides_Costa_Leite_1909 :temFilho :Maria_Flora_Araujo_Leite_1941 .
+
+:Jose_Santos_Ramalho_1942 :eFilhoDe :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temFilho :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :eFilhoDe :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temFilho :Jose_Santos_Ramalho_1942 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Jose_Emilio_Esteves_Araujo_1916 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Jose_Emilio_Esteves_Araujo_1916 .
+
+:Luis_Esteves_Araujo_1918 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Luis_Esteves_Araujo_1918 .
+
+:Luis_Esteves_Araujo_1918 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Luis_Esteves_Araujo_1918 .
+
+:Manuel_Carlos_Santos_Ramalho :eFilhoDe :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temFilho :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Carlos_Santos_Ramalho :eFilhoDe :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temFilho :Manuel_Carlos_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :eFilhoDe :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temFilho :Manuel_Fernando_Santos_Ramalho .
+
+:Manuel_Fernando_Santos_Ramalho :eFilhoDe :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temFilho :Manuel_Fernando_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :eFilhoDe :Antonio_Silva_Ramalho_1904 .
+
+:Antonio_Silva_Ramalho_1904 :temFilho :Maria_Flora_Santos_Ramalho .
+
+:Maria_Flora_Santos_Ramalho :eFilhoDe :Maria_Alves_Santos_1906 .
+
+:Maria_Alves_Santos_1906 :temFilho :Maria_Flora_Santos_Ramalho .
+
+:Maria_Helena_Leite_Ramalho_1968 :eFilhoDe :Maria_Flora_Araujo_Leite_1941 .
+
+:Maria_Flora_Araujo_Leite_1941 :temFilho :Maria_Helena_Leite_Ramalho_1968 .
+
+:Maria_Helena_Leite_Ramalho_1968 :eFilhoDe :Jose_Santos_Ramalho_1942 .
+
+:Jose_Santos_Ramalho_1942 :temFilho :Maria_Helena_Leite_Ramalho_1968 .
+
+:Sara_Esteves_Araujo_1914 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Sara_Esteves_Araujo_1914 .
+
+:Sara_Esteves_Araujo_1914 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Sara_Esteves_Araujo_1914 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :eFilhoDe :Maria_Margarida_Ribeiro_1954 .
+
+:Maria_Margarida_Ribeiro_1954 :temFilho :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Teresa_Maria_Ribeiro_Leite_1985 :eFilhoDe :Rui_Alberto_Araujo_Leite_1948 .
+
+:Rui_Alberto_Araujo_Leite_1948 :temFilho :Teresa_Maria_Ribeiro_Leite_1985 .
+
+:Virginia_Esteves_Araujo_1921 :eFilhoDe :Maria_Araujo_1884 .
+
+:Maria_Araujo_1884 :temFilho :Virginia_Esteves_Araujo_1921 .
+
+:Virginia_Esteves_Araujo_1921 :eFilhoDe :Henrique_Luiz_Araujo_1867 .
+
+:Henrique_Luiz_Araujo_1867 :temFilho :Virginia_Esteves_Araujo_1921 .

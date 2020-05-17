@@ -1,0 +1,75 @@
+
+Adicionar a relação eProgenitorGrau2 à ontologia
+
+    PREFIX : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#>
+
+    construct{
+        ?neto :temProgenitorGrau2 ?avo .
+        ?avo :eProgenitorGrau2 ?neto .
+        
+    }
+    where {
+        ?neto :temProgenitor/:temProgenitor ?avo .
+    }
+
+
+-Acrescentar a relação de avo masculino
+
+    construct{
+        ?neto :temAvoM ?avo .
+        ?avo :eAvoM ?neto .
+        
+    }
+    where {
+        ?neto :temProgenitor/:temPai ?avo .
+    }
+
+
+
+
+
+-Acrescentar sexos
+
+    PREFIX : <http://www.tartesdajulia.com/ontologies/2020/prc-genoa#>
+
+    construct{
+        ?pai :temSexo :Masculino .
+        ?mae :temSexo :Feminino .
+        
+    }
+    where {
+        ?filho :temPai ?pai .
+        ?filho :temMae ?mae .
+    }
+
+
+-Acrescentar ancestrais
+
+    construct {
+        ?pessoa :temAncestral ?ancestral .
+        ?ancestral :eAncestral ?pessoa .
+    } where {
+        ?pessoa :temProgenitor+ ?ancestral .    
+    } 
+
+-Acrescentar descendentes
+
+    construct {
+        ?des :eDescendenteDe ?anc .
+        ?anc :temDescendente ?des .
+    } where {
+        ?des :temProgenitor+ ?anc .    
+    } 
+
+
+-Acrescentar irmaos
+
+
+    construct {
+        ?p1 :temIrmao ?p2 .
+        ?p2 :temIrmao ?p1 .
+    } where {
+        ?p1 :temProgenitor ?proj .  
+        ?p2 :temProgenitor ?proj .  
+        filter(?p1!=?p2).
+    } 
